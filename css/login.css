@@ -354,6 +354,8 @@
     margin-top: 5px;
     display: none;
     margin-bottom: 15px;
+        z-index: 1;
+
 }
 
 .otp-inputs {
@@ -494,6 +496,8 @@
     margin-top: 5px;
     display: none;
     margin-bottom: 15px;
+        z-index: 1;
+
 }
 
 .otp-inputs {
@@ -634,6 +638,7 @@
     margin-top: 5px;
     display: none;
     margin-bottom: 15px;
+    z-index: 1;
 }
 
 .otp-inputs {
