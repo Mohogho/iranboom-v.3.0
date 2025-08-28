@@ -217,7 +217,7 @@
 @media (min-width: 768px) and (max-width: 992px){
     .menu{
         width: 100%;
-        height: 300px;
+        height: 350px;
         position: absolute;
         z-index: 100;
         display: flex;
@@ -247,7 +247,7 @@
     }
     .menu>nav>div:nth-of-type(1){
         width: 100%;
-        height: 50%;
+        height: 60%;
     }
     .menu>nav>div:nth-of-type(1)>ul{
         width: 100%;
@@ -311,7 +311,7 @@
     }
     .menu>nav>div:nth-of-type(3){
         width: 100%;
-        height: 50%;
+        height: 40%;
     }
     .menu>nav>div:nth-of-type(3)>ul{
         width: 100%;
@@ -385,7 +385,7 @@
 @media (min-width: 560px) and (max-width: 768px){
     .menu{
         width: 100%;
-        height: 300px;
+        height: 350px;
         position: absolute;
         z-index: 100;
         display: flex;
@@ -415,7 +415,7 @@
     }
     .menu>nav>div:nth-of-type(1){
         width: 100%;
-        height: 50%;
+        height: 60%;
     }
     .menu>nav>div:nth-of-type(1)>ul{
         width: 100%;
@@ -478,7 +478,7 @@
     }
     .menu>nav>div:nth-of-type(3){
         width: 100%;
-        height: 50%;
+        height: 40%;
     }
     .menu>nav>div:nth-of-type(3)>ul{
         width: 100%;
@@ -552,7 +552,7 @@
 @media (max-width: 560px){
     .menu{
         width: 100%;
-        height: 300px;
+        height: 350px;
         position: absolute;
         z-index: 100;
         display: flex;
@@ -582,7 +582,7 @@
     }
     .menu>nav>div:nth-of-type(1){
         width: 100%;
-        height: 50%;
+        height: 60%;
     }
     .menu>nav>div:nth-of-type(1)>ul{
         width: 100%;
@@ -645,7 +645,7 @@
     }
     .menu>nav>div:nth-of-type(3){
         width: 100%;
-        height: 50%;
+        height: 40%;
     }
     .menu>nav>div:nth-of-type(3)>ul{
         width: 100%;
