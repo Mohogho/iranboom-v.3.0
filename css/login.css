@@ -571,7 +571,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    background: url(../images/login-image.webp) center;
+    background: url(../images/login-image.webp) center left;
 }
 
 .split-form .form-side form {
@@ -632,7 +632,7 @@
 }
 
 .error {
-    color: red;
+    color:red;
     font-size: 14px;
     font-weight: bold;
     margin-top: 5px;
