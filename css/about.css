@@ -1,0 +1,116 @@
+@media (min-width: 1200px){
+    .about{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about>p{
+        margin-right: 200px;
+        margin-left: 200px;
+        direction: rtl;
+    }
+    .about>p:nth-of-type(odd){
+        color: black;
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .about>p:nth-of-type(even){
+        color: #555555;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .about{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about>p{
+        margin-right: 100px;
+        margin-left: 100px;
+        direction: rtl;
+    }
+    .about>p:nth-of-type(odd){
+        color: black;
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .about>p:nth-of-type(even){
+        color: #555555;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .about{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about>p{
+        margin-right: 100px;
+        margin-left: 100px;
+        direction: rtl;
+    }
+    .about>p:nth-of-type(odd){
+        color: black;
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .about>p:nth-of-type(even){
+        color: #555555;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 560px) and (max-width: 768px){
+    .about{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about>p{
+        margin-right: 60px;
+        margin-left: 60px;
+        direction: rtl;
+    }
+    .about>p:nth-of-type(odd){
+        color: black;
+        font-size: 32px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .about>p:nth-of-type(even){
+        color: #555555;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 560px) {
+    .about{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .about>p{
+        margin-right: 50px;
+        margin-left: 50px;
+        direction: rtl;
+    }
+    .about>p:nth-of-type(odd){
+        color: black;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .about>p:nth-of-type(even){
+        color: #555555;
+        font-size: 12px;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+}

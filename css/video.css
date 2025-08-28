@@ -1,0 +1,86 @@
+@media (min-width: 1200px){
+    .video-player{
+        width: 100%;
+        height: 707px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .video-player>video{
+        width: 100%;
+        height: 99%;
+        position: absolute;
+        object-fit: cover;
+    }
+    
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .video-player{
+        width: 100%;
+        height: 640px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .video-player>video{
+        width: 100%;
+        height: 99%;
+        position: absolute;
+        object-fit: cover;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .video-player{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .video-player>video{
+        width: 100%;
+        height: 99%;
+        position: absolute;
+        object-fit: cover;
+    }
+}
+@media (min-width: 560px) and (max-width: 768px){
+    .video-player{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .video-player>video{
+        width: 100%;
+        height: 99%;
+        position: absolute;
+        object-fit: cover;
+    }
+}
+@media (max-width: 560px){
+    .video-player{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+    }
+    .video-player>video{
+        width: 100%;
+        height: 99%;
+        position: absolute;
+        object-fit: cover;
+    }
+}

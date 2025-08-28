@@ -1,0 +1,286 @@
+@media (min-width: 1200px){
+    .services{
+        width: 100%;
+        height: auto;
+        background-image: url(../images/connecr.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .services>div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.397);
+        gap: 30px;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .services>div>a{
+        width: 550px;
+        height: 260px;
+        background-color: rgba(255, 255, 255, 0.507);
+        /* margin-right: 15px;
+        margin-left: 15px; */
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        direction: rtl;
+    }
+
+    .services>div>a>p:nth-of-type(2)
+    {
+        display: none;
+    }
+    .services>div>a>p:nth-of-type(1)
+    {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .services>div>a:hover{
+        background-color: white;
+        transition: background-color 1500ms ease;
+    }
+    .services>div>a:hover>p:nth-of-type(2){
+        display: block;
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .services>div>a:hover>p:nth-of-type(1){
+        display: none;
+    }
+    
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    .services{
+        width: 100%;
+        height: 785px;
+        background-image: url(../images/connecr.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .services>div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.397);
+    }
+    .services>div>a{
+        width: 450px;
+        height: 260px;
+        background-color: rgba(255, 255, 255, 0.507);
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        direction: rtl;
+    }
+    .services>div>a:nth-of-type(1)
+    {
+        margin-top: 100px;    
+    }
+    .services>div>a:nth-of-type(2)
+    {
+        margin-top: 100px;    
+    }.services>div>a:nth-of-type(3)
+    {
+        margin-bottom: 100px;    
+    }.services>div>a:nth-of-type(4)
+    {
+        margin-bottom: 100px;    
+    }
+    .services>div>a>p:nth-of-type(2)
+    {
+        display: none;
+    }
+    .services>div>a>p:nth-of-type(1)
+    {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .services>div>a:hover{
+        background-color: white;
+        transition: background-color 1500ms ease;
+    }
+    .services>div>a:hover>p:nth-of-type(2){
+        display: block;
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    .services>div>a:hover>p:nth-of-type(1){
+        display: none;
+    }
+    
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .services{
+        width: 100%;
+        height: 1185px;
+        background-image: url(../images/connecr.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .services>div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.397);
+    }
+    .services>div>a{
+        width: 80%;
+        height: 250px;
+        background-color: rgba(255, 255, 255, 0.507);
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+        direction: rtl;
+    }
+    .services>div>a:nth-of-type(1){
+        margin-top: 20px;
+    }
+    .services>div>a>p:nth-of-type(2)
+    {
+        display: none;
+    }
+    .services>div>a>p:nth-of-type(1)
+    {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .services>div>a>p:nth-of-type(2)
+    {
+        font-size: 14px;
+    }
+
+}
+@media (min-width: 560px) and (max-width: 768px){
+    .services{
+        width: 100%;
+        height: 1000px;
+        background-image: url(../images/connecr.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .services>div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.397);
+    }
+    .services>div>a{
+        width: 80%;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.507);
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+        direction: rtl;
+    }
+    .services>div>a:nth-of-type(1){
+        margin-top: 20px;
+    }
+    .services>div>a>p:nth-of-type(2)
+    {
+        display: none;
+    }
+    .services>div>a>p:nth-of-type(1)
+    {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .services>div>a>p:nth-of-type(2)
+    {
+        font-size: 14px;
+    }
+}
+@media (max-width: 560px){
+    .services{
+        width: 100%;
+        height: 1000px;
+        background-image: url(../images/connecr.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+    }
+    .services>div{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.397);
+    }
+    .services>div>a{
+        width: 80%;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.507);
+        margin-right: 15px;
+        margin-left: 15px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        text-decoration: none;
+        color: black;
+        direction: rtl;
+    }
+    .services>div>a:nth-of-type(1){
+        margin-top: 20px;
+    }
+    .services>div>a>p:nth-of-type(2)
+    {
+        display: none;
+    }
+    .services>div>a>p:nth-of-type(1)
+    {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .services>div>a>p:nth-of-type(2)
+    {
+        font-size: 12px;
+    }
+}
