@@ -1,0 +1,646 @@
+@media (min-width: 1200px) {
+    
+.split-form {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.split-form .image-side {
+    width: 50%;
+    background: url(../images/login-image.webp);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.split-form .image-side div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: absolute;
+}
+
+.split-form .image-side h2 {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 55px;
+}
+
+.split-form .image-side p {
+    position: absolute;
+    z-index: 1;
+    margin-top: 55px;
+}
+
+.split-form .form-side {
+    width: 50%;
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-form .form-side form {
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-form input {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid #eee;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+    direction: rtl;
+        font-size: 14px;
+}
+
+.split-form input:focus {
+    border-bottom-color: #FFB43E;
+}
+
+.split-form button {
+    width: 440px;
+    padding: 1rem;
+    background: #FFB43E;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+    margin-top: 20px;
+        font-size: 16px;
+}
+
+.split-form button:hover {
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    direction: ltr;
+}
+
+.otp-inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #afafaf;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    
+.split-form {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.split-form .image-side {
+    width: 50%;
+    background: url(../images/login-image.webp) center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.split-form .image-side div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: absolute;
+}
+
+.split-form .image-side h2 {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 55px;
+}
+
+.split-form .image-side p {
+    position: absolute;
+    z-index: 1;
+    margin-top: 55px;
+}
+
+.split-form .form-side {
+    width: 50%;
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-form .form-side form {
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-form input {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border-bottom: 2px solid #eee;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+    direction: rtl;
+        font-size: 14px;
+}
+
+.split-form input:focus {
+    border-bottom-color: #FFB43E;
+}
+
+.split-form button {
+    width: 440px;
+    padding: 1rem;
+    background: #FFB43E;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+    margin-top: 20px;
+        font-size: 14px;
+}
+
+.split-form button:hover {
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    direction: ltr;
+}
+
+.otp-inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #afafaf;
+}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+        
+.split-form {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.split-form .image-side {
+    width: 0%;
+    background: url(../images/login-image.webp) center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.split-form .image-side div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: absolute;
+}
+
+.split-form .image-side h2 {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 55px;
+    color: white;
+}
+
+.split-form .image-side p {
+    position: absolute;
+    z-index: 1;
+    margin-top: 55px;
+}
+
+.split-form .form-side {
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(../images/login-image.webp) center;
+}
+
+.split-form .form-side form {
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-form .form-side .dark{
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex !important;
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+}
+
+.split-form input {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border: 2px solid #eee;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+    direction: rtl;
+    border-radius: 20px;
+    z-index: 1;
+    font-size: 12px;
+}
+.split-form h2{
+    color: white !important;
+    z-index: 1;
+    margin-bottom: 50px !important;
+}
+.split-form input:focus {
+    border-color: #FFB43E;
+}
+
+.split-form button {
+    width: 440px;
+    padding: 1rem;
+    background: #FFB43E;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+    margin-top: 10px;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.split-form button:hover {
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    direction: ltr;
+}
+
+.otp-inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #afafaf;
+}
+}
+
+@media (min-width: 560px) and (max-width: 768px) {
+          
+.split-form {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.split-form .image-side {
+    width: 0%;
+    background: url(../images/login-image.webp) center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.split-form .image-side div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: absolute;
+}
+
+.split-form .image-side h2 {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 55px;
+    color: white;
+}
+
+.split-form .image-side p {
+    position: absolute;
+    z-index: 1;
+    margin-top: 55px;
+}
+
+.split-form .form-side {
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(../images/login-image.webp) center;
+}
+
+.split-form .form-side form {
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-form .form-side .dark{
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex !important;
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+}
+
+.split-form input {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border: 2px solid #eee;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+    direction: rtl;
+    border-radius: 20px;
+    z-index: 1;
+    font-size: 12px;
+}
+.split-form h2{
+    color: white !important;
+    z-index: 1;
+    margin-bottom: 50px !important;
+}
+.split-form input:focus {
+    border-color: #FFB43E;
+}
+
+.split-form button {
+    width: 440px;
+    padding: 1rem;
+    background: #FFB43E;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+    margin-top: 10px;
+    z-index: 1;
+    font-size: 12px;
+}
+
+.split-form button:hover {
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    direction: ltr;
+}
+
+.otp-inputs input {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #afafaf;
+}
+}
+
+@media (max-width: 560px) {
+          
+.split-form {
+    display: flex;
+    background: white;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.split-form .image-side {
+    width: 0%;
+    background: url(../images/login-image.webp) center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    display: none;
+}
+
+.split-form .image-side div {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    position: absolute;
+}
+
+.split-form .image-side h2 {
+    position: absolute;
+    z-index: 1;
+    margin-bottom: 55px;
+    color: white;
+}
+
+.split-form .image-side p {
+    position: absolute;
+    z-index: 1;
+    margin-top: 55px;
+}
+
+.split-form .form-side {
+    width: 100%;
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: url(../images/login-image.webp) center;
+}
+
+.split-form .form-side form {
+    direction: rtl;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.split-form .form-side .dark{
+    background-color: rgba(0, 0, 0, 0.404);
+    display: flex !important;
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+}
+
+.split-form input {
+    width: 350px;
+    padding: 20px;
+    border: none;
+    border: 2px solid #eee;
+    outline: none;
+    transition: border-color 0.3s;
+    margin-bottom: 20px;
+    direction: rtl;
+    border-radius: 20px;
+    z-index: 1;
+    font-size: 12px;
+}
+.split-form h2{
+    color: white !important;
+    z-index: 1;
+    margin-bottom: 50px !important;
+}
+.split-form input:focus {
+    border-color: #FFB43E;
+}
+
+.split-form button {
+    width: 390px;
+    padding: 1rem;
+    background: #FFB43E;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 0.3s;
+    margin-top: 10px;
+    z-index: 1;
+    font-size: 14px;
+}
+
+.split-form button:hover {
+    transform: translateY(-2px);
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: none;
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    direction: ltr;
+}
+
+.otp-inputs input {
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    text-align: center;
+    border-bottom: 2px solid #afafaf;
+}
+}

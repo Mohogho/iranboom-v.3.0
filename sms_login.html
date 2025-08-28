@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css?v=3.1.0">
+    <title>تأیید کد</title>
+</head>
+
+<body>
+  <div class="split-form">
+    <div class="image-side">
+        <div></div>
+      <h2 style="direction: rtl;">کد تأیید را وارد کنید</h2>
+      <p>کدی به شماره موبایل شما ارسال شد</p>
+    </div>
+    <div class="form-side">
+    <div style="display: none;" class="dark"></div>
+      <h2 style="margin-bottom: 30px;">تأیید پیامک</h2>
+      <form id="otpForm">
+        <div class="otp-inputs">
+          <input type="text" maxlength="1" class="otp" required>
+          <input type="text" maxlength="1" class="otp" required>
+          <input type="text" maxlength="1" class="otp" required>
+          <input type="text" maxlength="1" class="otp" required>
+          <input type="text" maxlength="1" class="otp" required>
+        </div>
+        <p id="otpError" class="error">⚠️ کد وارد شده صحیح نیست.</p>
+        <button type="submit">تأیید</button>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    const inputs = document.querySelectorAll(".otp");
+    const form = document.getElementById("otpForm");
+    const otpError = document.getElementById("otpError");
+    const correctCode = "12345"; // ✅ کد درست
+
+    window.onload = () => {
+      inputs[0].focus();
+    };
+
+    inputs.forEach((input, index) => {
+      input.addEventListener("input", () => {
+        input.value = input.value.replace(/[^0-9]/g, "");
+        if (input.value && index < inputs.length - 1) {
+          inputs[index + 1].focus();
+        }
+
+        // اگر آخرین اینپوت پر شد → بررسی کد
+        if (index === inputs.length - 1 && input.value) {
+          checkCode();
+        }
+      });
+
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Backspace" && !input.value && index > 0) {
+          inputs[index - 1].focus();
+        }
+      });
+    });
+
+    // تابع بررسی کد
+    function checkCode() {
+      const enteredCode = Array.from(inputs).map(inp => inp.value).join("");
+      if (enteredCode === correctCode) {
+        window.location.href = "index.html"; // انتقال به صفحه ایندکس
+      } else {
+        otpError.style.display = "block";
+      }
+    }
+
+    // بررسی کد در صورت کلیک روی دکمه (پشتیبان)
+    form.addEventListener("submit", function(e) {
+      e.preventDefault();
+      checkCode();
+    });
+  </script>
+</body>
+
+</html>
