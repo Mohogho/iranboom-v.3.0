@@ -217,7 +217,7 @@
 @media (min-width: 768px) and (max-width: 992px){
     .menu{
         width: 100%;
-        height: 325px;
+        height: auto;
         position: absolute;
         z-index: 100;
         display: flex;
@@ -225,33 +225,29 @@
     }
     .menu>nav{
         width: 100%;
-        height: 70%;
         display: none;
         flex-flow: column nowrap;
         background-color: rgba(24, 24, 24, 0.747);
-        margin-top: -10px;
+        margin-top: 10px;
+
     }
     .llogo-in-mobile{
         width: 50%;
-        height: 30%;
         display: flex;
         align-items: center;
         
     }
     .bburger-bar{
         width: 50%;
-        height: 30%;
         display: flex;
         justify-content: end;
         align-items: center;
     }
     .menu>nav>div:nth-of-type(1){
         width: 100%;
-        height: 60%;
     }
     .menu>nav>div:nth-of-type(1)>ul{
         width: 100%;
-        height: 100%;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -262,7 +258,7 @@
         margin-right: 20px;
         margin-left: 20px;
         width: 100%;
-        height: 50%;
+        height: 50px !important;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -329,6 +325,8 @@
         flex-flow: column nowrap;
         justify-content: center;
         align-items: center;
+                height: 50px !important;
+
     }
     .menu>nav>div:nth-of-type(3)>ul>li:hover{
         background-color: rgba(199, 199, 199, 0.726);
@@ -385,7 +383,7 @@
 @media (min-width: 560px) and (max-width: 768px){
     .menu{
         width: 100%;
-        height: 325px;
+        height: auto;
         position: absolute;
         z-index: 100;
         display: flex;
@@ -393,33 +391,28 @@
     }
     .menu>nav{
         width: 100%;
-        height: 70%;
         display: none;
         flex-flow: column nowrap;
         background-color: rgba(24, 24, 24, 0.747);
-        margin-top: -10px;
+        margin-top: 10px;
     }
     .llogo-in-mobile{
         width: 50%;
-        height: 30%;
         display: flex;
         align-items: center;
         
     }
     .bburger-bar{
         width: 50%;
-        height: 30%;
         display: flex;
         justify-content: end;
         align-items: center;
     }
     .menu>nav>div:nth-of-type(1){
         width: 100%;
-        height: 60%;
     }
     .menu>nav>div:nth-of-type(1)>ul{
         width: 100%;
-        height: 100%;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -430,7 +423,7 @@
         margin-right: 20px;
         margin-left: 20px;
         width: 100%;
-        height: 50%;
+        height: 40px !important;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -491,7 +484,7 @@
     }
     .menu>nav>div:nth-of-type(3)>ul>li{
         width: 100%;
-        height: 50%;
+        height: 40px !important;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -552,7 +545,7 @@
 @media (max-width: 560px){
     .menu{
         width: 100%;
-        height: 325px;
+        height: auto;
         position: absolute;
         z-index: 100;
         display: flex;
@@ -560,33 +553,28 @@
     }
     .menu>nav{
         width: 100%;
-        height: 70%;
         display: none;
         flex-flow: column nowrap;
         background-color: rgba(24, 24, 24, 0.747);
-        margin-top: -5px;
+        margin-top: 5px;
     }
     .llogo-in-mobile{
         width: 50%;
-        height: 30%;
         display: flex;
         align-items: center;
         
     }
     .bburger-bar{
         width: 50%;
-        height: 30%;
         display: flex;
         justify-content: end;
         align-items: center;
     }
     .menu>nav>div:nth-of-type(1){
         width: 100%;
-        height: 60%;
     }
     .menu>nav>div:nth-of-type(1)>ul{
         width: 100%;
-        height: 100%;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -597,7 +585,7 @@
         margin-right: 20px;
         margin-left: 20px;
         width: 100%;
-        height: 50%;
+        height: 40px !important;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;
@@ -658,7 +646,7 @@
     }
     .menu>nav>div:nth-of-type(3)>ul>li{
         width: 100%;
-        height: 50%;
+        height: 40px !important;
         display: flex;
         flex-flow: column nowrap;
         justify-content: center;

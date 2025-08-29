@@ -1,10 +1,23 @@
+@media (min-width: 1200px){
 .profile {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 30px 0;
-    height: 80vh;
     margin-bottom: 100px;
+    margin-top: 25px;
+
+}
+
+.prof {
+    width: 100% !important;
+    display: flex;
+    justify-content: right;
+    padding-right: 40px !important;
+}
+
+.prof>p {
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .profile>.container {
@@ -14,11 +27,15 @@
     justify-content: end;
     gap: 20px;
     direction: rtl;
-    height: 100%;
-    background-color: #F7FBFE;
+    height: 600px;
     border-radius: 20px;
     padding: 20px;
     padding-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+
+
 }
 
 .profile>.container>div {
@@ -41,6 +58,18 @@
     border: 1px solid #5a5a5a;
     font-size: 14px;
     padding-right: 10px;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile>.container>div>input:focus,
+.profile>.container>div>select:focus {
+    outline: none;
+    border-color: #FFB43E !important;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
 }
 
 .profile>.container>div>.flex-row {
@@ -52,11 +81,23 @@
 
 .profile>.container>div>.flex-row>select,
 .profile>.container>div>.flex-row>input {
-    flex: 80%;
+    width: 80%;
     height: 50px;
     padding-right: 10px;
     border-radius: 20px;
     border: 1px solid #5a5a5a;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.profile>.container>div>.flex-row>select:focus,
+.profile>.container>div>.flex-row>input:focus {
+    border-color: #FFB43E;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
 
 }
 
@@ -94,12 +135,619 @@
 .profile>.container>.buttons>.btn:hover {
     opacity: 0.8;
 }
+
 input[type=number] {
-  -moz-appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
+}
+}
+@media (min-width: 992px) and (max-width: 1200px){
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    margin-top: 25px;
+
+}
+
+.prof {
+    width: 100% !important;
+    display: flex;
+    justify-content: right;
+    padding-right: 40px !important;
+}
+
+.prof>p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.profile>.container {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    gap: 20px;
+    direction: rtl;
+    height: 600px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+
+
+}
+
+.profile>.container>div {
+    width: 48%;
+}
+
+.profile>.container>div>label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.profile>.container>div>input,
+.profile>.container>div>select {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    font-size: 14px;
+    padding-right: 10px;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile>.container>div>input:focus,
+.profile>.container>div>select:focus {
+    outline: none;
+    border-color: #FFB43E !important;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.profile>.container>div>.flex-row {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+
+}
+
+.profile>.container>div>.flex-row>select,
+.profile>.container>div>.flex-row>input {
+    width: 80%;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.profile>.container>div>.flex-row>select:focus,
+.profile>.container>div>.flex-row>input:focus {
+    border-color: #FFB43E;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+
+}
+
+.profile>.container>.buttons {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    align-items: end;
+    height: 50px;
+    gap: 15px;
+    margin-top: 34px;
+}
+
+.profile>.container>.buttons>.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.profile>.container>.buttons>.btn-cancel {
+    background-color: #D71E1E;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn-save {
+    background-color: #1ed760;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn:hover {
+    opacity: 0.8;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} 
+}
+@media (min-width: 768px) and (max-width: 992px){
+
+    .profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    margin-top: 25px;
+
+}
+
+.prof {
+    width: 100% !important;
+    display: flex;
+    justify-content: right;
+    padding-right: 40px !important;
+}
+
+.prof>p {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.profile>.container {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    gap: 20px;
+    direction: rtl;
+    height: 600px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+
+
+}
+
+.profile>.container>div {
+    width: 48%;
+}
+
+.profile>.container>div>label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.profile>.container>div>input,
+.profile>.container>div>select {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    font-size: 14px;
+    padding-right: 10px;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile>.container>div>input:focus,
+.profile>.container>div>select:focus {
+    outline: none;
+    border-color: #FFB43E !important;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.profile>.container>div>.flex-row {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+
+}
+
+.profile>.container>div>.flex-row>select,
+.profile>.container>div>.flex-row>input {
+    width: 80%;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.profile>.container>div>.flex-row>select:focus,
+.profile>.container>div>.flex-row>input:focus {
+    border-color: #FFB43E;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+
+}
+
+.profile>.container>.buttons {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    align-items: end;
+    height: 50px;
+    gap: 15px;
+    margin-top: 34px;
+}
+
+.profile>.container>.buttons>.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.profile>.container>.buttons>.btn-cancel {
+    background-color: #D71E1E;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn-save {
+    background-color: #1ed760;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn:hover {
+    opacity: 0.8;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} 
+}
+@media (min-width: 560px) and (max-width: 768px){
+        .profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    margin-top: 25px;
+
+}
+
+.prof {
+    width: 100% !important;
+    display: flex;
+    justify-content: right;
+    padding-right: 10px !important;
+}
+
+.prof>p {
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.profile>.container {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    direction: rtl;
+    height: 1000px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+
+
+}
+
+.profile>.container>div {
+    width: 90%;
+    margin-right: 40px;
+}
+
+.profile>.container>div>label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.profile>.container>div>input,
+.profile>.container>div>select {
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    font-size: 12px;
+    padding-right: 10px;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile>.container>div>input:focus,
+.profile>.container>div>select:focus {
+    outline: none;
+    border-color: #FFB43E !important;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.profile>.container>div>.flex-row {
+    display: flex;
+    gap: 10px;
+    width: 90%;
+
+}
+
+.profile>.container>div>.flex-row>select,
+.profile>.container>div>.flex-row>input {
+    width: 80%;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.profile>.container>div>.flex-row>select:focus,
+.profile>.container>div>.flex-row>input:focus {
+    border-color: #FFB43E;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+
+}
+
+.profile>.container>.buttons {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: start;
+    align-items: end;
+    height: 50px;
+    gap: 15px;
+    margin-top: 20px;
+    margin-right: 40px !important;
+}
+
+.profile>.container>.buttons>.btn {
+    width: 43%;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+        padding-right: 0px !important;
+
+}
+
+.profile>.container>.buttons>.btn-cancel {
+    background-color: #D71E1E;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn-save {
+    background-color: #1ed760;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn:hover {
+    opacity: 0.8;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} 
+}
+@media (max-width: 560px) {
+ .profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 100px;
+    margin-top: 25px;
+
+}
+
+.prof {
+    width: 100% !important;
+    display: flex;
+    justify-content: right;
+    padding-right: 2px !important;
+}
+
+.prof>p {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.profile>.container {
+    width: 85%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
+    direction: rtl;
+    height: 1000px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+
+
+
+}
+
+.profile>.container>div {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+}
+
+.profile>.container>div>label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.profile>.container>div>input,
+.profile>.container>div>select {
+    width: 95%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    font-size: 12px;
+    padding-right: 10px;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+.profile>.container>div>input:focus,
+.profile>.container>div>select:focus {
+    outline: none;
+    border-color: #FFB43E !important;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.profile>.container>div>.flex-row {
+    display: flex;
+    gap: 10px;
+    width: 95%;
+
+}
+
+.profile>.container>div>.flex-row>select,
+.profile>.container>div>.flex-row>input {
+    width: 80%;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    border-color: #FFB43E;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.profile>.container>div>.flex-row>select:focus,
+.profile>.container>div>.flex-row>input:focus {
+    border-color: #FFB43E;
+    box-shadow: 0 0 10px rgba(30, 215, 96, 0.4), 0 4px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+
+}
+
+.profile>.container>.buttons {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: start;
+    align-items: end;
+    height: 50px;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.profile>.container>.buttons>.btn {
+    width: 46%;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+        padding-right: 0px !important;
+
+}
+
+.profile>.container>.buttons>.btn-cancel {
+    background-color: #D71E1E;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn-save {
+    background-color: #1ed760;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn:hover {
+    opacity: 0.8;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+} 
 }

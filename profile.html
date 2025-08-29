@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css?v=3.2.0">
+    <link rel="stylesheet" href="css/main.css?v=3.2.1">
     <title>پروفایل</title>
 </head>
 
-<body>
+<body style="background: linear-gradient(135deg, #fddb92, #d1fdff);
+">
 
 
     <!-- menu section -->
-    <section class="menu" style=" position: relative; margin-bottom: 50px; border-bottom: 1px solid gainsboro;">
+    <section class="menu" style=" position: relative; ">
         <div class="bburger-bar">
             <a href="javascript:void(0);" class="burger-bar" onclick="myFunction()"><img
                     src="./images/hamburger-menu-icon-png-white-10.jpg" alt=""></a>
@@ -20,7 +21,7 @@
         <div class="llogo-in-mobile">
             <a href="./index.html" class="logo-in-mobile"><img src="./images/logo.png" alt=""></a>
         </div>
-        <nav id="myLinks">
+        <nav id="myLinks" >
             <div>
                 <ul>
                     <li><a href="./about.html" style="color: black;">درباره ایران بوم</a></li>
@@ -44,9 +45,16 @@
     </section>
 
 
-
     <form method="post" class="profile">
+
+
         <div class="container">
+
+            <div class="prof">
+                <p class="">پروفایل</p>
+            </div>
+
+
             <div>
                 <label>شماره موبایل</label>
                 <input type="text" value="09123456789" readonly>
@@ -160,50 +168,50 @@
 
 
 
-
+    <script src="./js/main.js"></script>
     <script>
-const monthSelect = document.getElementById("month");
-const dayInput = document.getElementById("day");
-const yearInput = document.getElementById("year");
+        const monthSelect = document.getElementById("month");
+        const dayInput = document.getElementById("day");
+        const yearInput = document.getElementById("year");
 
-// سال جاری شمسی (ثابت)
-const currentYear = 1404;
+        // سال جاری شمسی (ثابت)
+        const currentYear = 1404;
 
-// وقتی ماه تغییر کرد
-monthSelect.addEventListener("change", () => {
-    const month = parseInt(monthSelect.value);
-    let maxDay = 31;
+        // وقتی ماه تغییر کرد
+        monthSelect.addEventListener("change", () => {
+            const month = parseInt(monthSelect.value);
+            let maxDay = 31;
 
-    if (month >= 7 && month <= 11) {
-        maxDay = 30;
-    } else if (month === 12) {
-        maxDay = 29;
-    }
+            if (month >= 7 && month <= 11) {
+                maxDay = 30;
+            } else if (month === 12) {
+                maxDay = 29;
+            }
 
-    dayInput.max = maxDay;
+            dayInput.max = maxDay;
 
-    // فقط اگر کاربر مقدار بیشتر زده بود اصلاح بشه
-    if (parseInt(dayInput.value) > maxDay) {
-        dayInput.value = "";
-    }
-});
+            // فقط اگر کاربر مقدار بیشتر زده بود اصلاح بشه
+            if (parseInt(dayInput.value) > maxDay) {
+                dayInput.value = "";
+            }
+        });
 
-// محدود کردن روز به ۲ رقم
-dayInput.addEventListener("input", () => {
-    if (dayInput.value.length > 2) {
-        dayInput.value = dayInput.value.slice(0, 2);
-    }
-});
+        // محدود کردن روز به ۲ رقم
+        dayInput.addEventListener("input", () => {
+            if (dayInput.value.length > 2) {
+                dayInput.value = dayInput.value.slice(0, 2);
+            }
+        });
 
-// سال چهار رقمی و <= 1404
-yearInput.addEventListener("input", () => {
-    if (yearInput.value.length > 4) {
-        yearInput.value = yearInput.value.slice(0, 4);
-    }
-    if (parseInt(yearInput.value) > currentYear) {
-        yearInput.value = currentYear;
-    }
-});
+        // سال چهار رقمی و <= 1404
+        yearInput.addEventListener("input", () => {
+            if (yearInput.value.length > 4) {
+                yearInput.value = yearInput.value.slice(0, 4);
+            }
+            if (parseInt(yearInput.value) > currentYear) {
+                yearInput.value = currentYear;
+            }
+        });
 
 
     </script>

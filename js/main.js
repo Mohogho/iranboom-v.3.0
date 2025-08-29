@@ -50,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
         x.style.display = "none";
       } else {
         x.style.display = "flex";
+        a.style.color = "white" ;
       }
     }
     document.addEventListener("click", function(event) {
