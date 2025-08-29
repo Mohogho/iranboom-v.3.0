@@ -1,0 +1,105 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 0;
+    height: 80vh;
+    margin-bottom: 100px;
+}
+
+.profile>.container {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: end;
+    gap: 20px;
+    direction: rtl;
+    height: 100%;
+    background-color: #F7FBFE;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.profile>.container>div {
+    width: 48%;
+}
+
+.profile>.container>div>label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.profile>.container>div>input,
+.profile>.container>div>select {
+    width: 80%;
+    height: 50px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.profile>.container>div>.flex-row {
+    display: flex;
+    gap: 10px;
+    width: 80%;
+
+}
+
+.profile>.container>div>.flex-row>select,
+.profile>.container>div>.flex-row>input {
+    flex: 80%;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #5a5a5a;
+
+}
+
+.profile>.container>.buttons {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-end;
+    align-items: end;
+    height: 50px;
+    gap: 15px;
+    margin-top: 34px;
+}
+
+.profile>.container>.buttons>.btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.profile>.container>.buttons>.btn-cancel {
+    background-color: #D71E1E;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn-save {
+    background-color: #1ed760;
+    color: #000;
+}
+
+.profile>.container>.buttons>.btn:hover {
+    opacity: 0.8;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

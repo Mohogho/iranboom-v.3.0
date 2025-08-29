@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css?v=3.2.0">
+    <title>پروفایل</title>
+</head>
+
+<body>
+
+
+    <!-- menu section -->
+    <section class="menu" style=" position: relative; margin-bottom: 50px; border-bottom: 1px solid gainsboro;">
+        <div class="bburger-bar">
+            <a href="javascript:void(0);" class="burger-bar" onclick="myFunction()"><img
+                    src="./images/hamburger-menu-icon-png-white-10.jpg" alt=""></a>
+        </div>
+        <div class="llogo-in-mobile">
+            <a href="./index.html" class="logo-in-mobile"><img src="./images/logo.png" alt=""></a>
+        </div>
+        <nav id="myLinks">
+            <div>
+                <ul>
+                    <li><a href="./about.html" style="color: black;">درباره ایران بوم</a></li>
+                    <li><a href="#services" style="color: black;">خدمات</a></li>
+                    <li><a href="./sms_login.html" style="color: black;">ارتباط با ما</a></li>
+                </ul>
+            </div>
+            <div>
+                <a href="index.html"><img src="./images/logo.png" alt=""></a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="./login.html" style="color: black;">ورود / ثبت نام</a></li>
+                    <li>
+                        <p><a href="tel: 02633412889"
+                                style="text-decoration: none; color: rgb(2, 0, 0);">02633412889</a></p>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+
+
+    <form method="post" class="profile">
+        <div class="container">
+            <div>
+                <label>شماره موبایل</label>
+                <input type="text" value="09123456789" readonly>
+            </div>
+
+            <div>
+                <label>نام و نام خانوادگی</label>
+                <input type="text" value=" ">
+            </div>
+
+            <div>
+                <label>ایمیل</label>
+                <input type="email" placeholder="example@gmail.com">
+            </div>
+
+            <div>
+                <label>استان</label>
+                <input type="text" placeholder="">
+            </div>
+
+            <div>
+                <label>شهر</label>
+                <input type="text" placeholder="">
+            </div>
+
+            <div>
+                <label>تاریخ تولد</label>
+                <div class="flex-row">
+                    <input id="day" type="number" inputmode="numeric" placeholder="روز" min="1" max="31">
+                    <select id="month">
+                        <option value="1">فروردین</option>
+                        <option value="2">اردیبهشت</option>
+                        <option value="3">خرداد</option>
+                        <option value="4">تیر</option>
+                        <option value="5">مرداد</option>
+                        <option value="6">شهریور</option>
+                        <option value="7">مهر</option>
+                        <option value="8">آبان</option>
+                        <option value="9">آذر</option>
+                        <option value="10">دی</option>
+                        <option value="11">بهمن</option>
+                        <option value="12">اسفند</option>
+                    </select>
+                    <input id="year" type="number" inputmode="numeric" placeholder="سال">
+
+                </div>
+
+            </div>
+
+
+            <div> <label>جنسیت</label>
+                <select>
+                    <option>مرد</option>
+                    <option>زن</option>
+                </select>
+            </div>
+
+
+            <div class="buttons">
+                <button class="btn btn-cancel">لغو</button>
+                <button class="btn btn-save">ثبت</button>
+            </div>
+        </div>
+    </form method="post">
+
+
+
+
+    <!-- footer -->
+    <footer id="contact">
+        <div>
+            <div>
+                <div><a href="index.html"><img src="./images/logo.png" alt=""></a>
+                    <h1>ایران بوم</h1>
+                </div>
+                <div>
+                    <p>ایران بوم همراهی که فراتر از نیازهای امروز شما فکر می کند. برای مشاوره رایگان یا ثبت درخواست همین
+                        حالا با
+                        ما تماس بگیرید .​</p>
+                </div>
+            </div>
+            <div>
+                <p>ارتباط با ما </p>
+                <p></p>
+                <p>آدرس دفتر : کرج ، مهرشهر ، خیابان ۱۰۰ غربی ، پیچک دوم ،<br> فرعی اول ، ساختمان اداری مهرشهر طبقه ۴
+                    واحد ۳۱
+                </p>
+                <p><a href="tel: 02633412889" style="text-decoration: none; color: white;">شماره تلفن دفتر :
+                        02633412889</a></p>
+                <p><a href="tel: +989123854954" style="text-decoration: none; color: white;">شماره تلفن مدیریت :
+                        09123854954</a>
+                </p>
+                <p></p>
+                <p>ایمیل : Iranboomcompany@gmail.com
+                </p>
+            </div>
+            <div>
+                <p>ما را دنبال کنید</p>
+                <div>
+                    <a href="#"><img src="./images/instagram.png" alt=""></a>
+                    <a href="https://web.telegram.org/k/#@m_ali_nateghi"><img src="./images/telegram.png" alt=""></a>
+                    <a href="#"><img src="./images/linkedin.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div></div>
+        <div>
+            <p> &copy; 2025 تمامی حقوق این وبسایت متعلق به ایران بوم می باشد .</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+const monthSelect = document.getElementById("month");
+const dayInput = document.getElementById("day");
+const yearInput = document.getElementById("year");
+
+// سال جاری شمسی (ثابت)
+const currentYear = 1404;
+
+// وقتی ماه تغییر کرد
+monthSelect.addEventListener("change", () => {
+    const month = parseInt(monthSelect.value);
+    let maxDay = 31;
+
+    if (month >= 7 && month <= 11) {
+        maxDay = 30;
+    } else if (month === 12) {
+        maxDay = 29;
+    }
+
+    dayInput.max = maxDay;
+
+    // فقط اگر کاربر مقدار بیشتر زده بود اصلاح بشه
+    if (parseInt(dayInput.value) > maxDay) {
+        dayInput.value = "";
+    }
+});
+
+// محدود کردن روز به ۲ رقم
+dayInput.addEventListener("input", () => {
+    if (dayInput.value.length > 2) {
+        dayInput.value = dayInput.value.slice(0, 2);
+    }
+});
+
+// سال چهار رقمی و <= 1404
+yearInput.addEventListener("input", () => {
+    if (yearInput.value.length > 4) {
+        yearInput.value = yearInput.value.slice(0, 4);
+    }
+    if (parseInt(yearInput.value) > currentYear) {
+        yearInput.value = currentYear;
+    }
+});
+
+
+    </script>
+
+</body>
+
+</html>
