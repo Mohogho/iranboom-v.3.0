@@ -343,9 +343,36 @@
     align-items: center;
     margin-top: -50px;
     text-decoration: none;
-
+        -webkit-tap-highlight-color: transparent;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 
   }
+
+
+  .emp>.sub>div.swiper>.swiper-wrapper>a.swiper-slide::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.3);
+    /* رنگ موج */
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    /* transition: transform 0s ease, opacity 0.1s ease; */
+  }
+
+
+  .emp>.sub>div.swiper>.swiper-wrapper>a.swiper-slide:active::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(4);
+    top: 50%;
+    left: 50%;
+  }
+
 
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>img {
     width: 100%;
@@ -497,9 +524,39 @@
     margin-right: 80px !important;
     transform: translateX(40px);
     text-decoration: none;
-
+        -webkit-tap-highlight-color: transparent;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
 
   }
+
+
+  .emp>.sub>div.swiper>.swiper-wrapper>a.swiper-slide::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.3);
+    /* رنگ موج */
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    /* transition: transform 0s ease, opacity 0.1s ease; */
+  }
+
+
+  .emp>.sub>div.swiper>.swiper-wrapper>a.swiper-slide:active::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(4);
+    top: 50%;
+    left: 50%;
+  }
+
+
+
+  
 
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>img {
     width: 100%;
@@ -653,6 +710,7 @@
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
     position: relative;
+    border-radius: 20px;
     overflow: hidden;
 
   }
@@ -669,7 +727,7 @@
     transform: scale(0);
     opacity: 0;
     pointer-events: none;
-    transition: transform 0.4s ease, opacity 1.8s ease;
+    /* transition: transform 0s ease, opacity 0.1s ease; */
   }
 
 
