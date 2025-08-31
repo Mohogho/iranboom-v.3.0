@@ -336,6 +336,24 @@
       preventClicksPropagation: false,
     });
   </script>
+  <script>
+    document.querySelectorAll(".swiper-wrapper > a.swiper-slide").forEach(link => {
+      link.addEventListener("click", function (e) {
+        // اگه لینک خالی یا #
+        if (!this.getAttribute("href") || this.getAttribute("href") === "#") {
+          return;
+        }
+
+        e.preventDefault(); // جلو باز شدن سریع لینک رو بگیر
+        let url = this.getAttribute("href");
+
+        // بذار Ripple اجرا بشه بعد برو به لینک
+        setTimeout(() => {
+          window.location.href = url;
+        }, 400); // همزمان با زمان Ripple در CSS
+      });
+    });
+  </script>
 
   <script>
     var swiper = new Swiper(".mySwiper2", {

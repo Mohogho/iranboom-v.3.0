@@ -702,34 +702,4 @@
         display: flex;
         align-items: center;
     }
-
-
-
-
-
-
-
-    .menu nav a {
-  -webkit-tap-highlight-color: transparent; /* حذف آبی مرورگر */
-  position: relative;
-  overflow: hidden;
-}
-.menu nav a::after {
-  content: "";
-  position: absolute;
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
-  background: rgba(255, 255, 255, 0.3); /* رنگ موج */
-  transform: scale(0);
-  opacity: 0;
-  pointer-events: none;
-  transition: transform 0.4s ease, opacity 0.8s ease;
-}
-.menu nav a:active::after {
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(2.5);
-  top: 50%;
-  left: 50%;
-}
 }
