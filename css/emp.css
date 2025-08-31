@@ -652,9 +652,32 @@
     transform: translateX(-25px);
     text-decoration: none;
     -webkit-tap-highlight-color: transparent;
-    outline: none;
+    position: relative;
+    overflow: hidden;
+
+  }
 
 
+  .emp>.sub>div.swiper>.swiper-wrapper>a.swiper-slide::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.3);
+    /* رنگ موج */
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.4s ease, opacity 0.8s ease;
+  }
+
+
+  .emp>.sub>div.swiper>.swiper-wrapper>a.swiper-slide:active::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(4);
+    top: 50%;
+    left: 50%;
   }
 
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>img {
