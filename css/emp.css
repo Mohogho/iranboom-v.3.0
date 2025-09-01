@@ -307,9 +307,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-  .emp {
+.emp {
     width: 100%;
-    height: 600px;
+    height: 550px;
     background-color: #141414;
     overflow: hidden;
   }
@@ -335,15 +335,16 @@
 
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide {
     border-radius: 10px;
-    width: 200px !important;
-    height: 400px;
+    width: 300px !important;
+    height: 450px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: -50px;
+    margin-right: 80px !important;
+    transform: translateX(-25px);
     text-decoration: none;
-        -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -373,21 +374,19 @@
     left: 50%;
   }
 
-
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>img {
     width: 100%;
-    height: 80%;
+    height: 65%;
     border-radius: 10px;
   }
 
 
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>div {
     width: 100%;
-    height: 15%;
+    height: 35%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-bottom: 50px;
   }
 
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>div>p:nth-of-type(1) {
@@ -409,8 +408,8 @@
   .swiper-button-next:before {
     content: '';
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     -moz-border-radius: 50%;
     border-radius: 50%;
     background-color: white;
@@ -434,7 +433,7 @@
     left: auto;
     top: 50%;
     width: 27px;
-    transform: translateX(80px);
+    transform: translateX(100px);
     cursor: pointer;
     background-size: 27px 44px;
     background-position: center;
@@ -448,8 +447,8 @@
   .swiper-button-prev:before {
     content: '';
     display: inline-block;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     -moz-border-radius: 50%;
     border-radius: 50%;
     background-color: white;
@@ -473,7 +472,7 @@
     left: auto;
     top: 50%;
     width: 27px;
-    transform: translateX(-20px);
+    transform: translateX(-50px);
     cursor: pointer;
     background-size: 27px 44px;
     background-position: center;
@@ -515,16 +514,15 @@
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide {
     border-radius: 10px;
     width: 200px !important;
-    height: 300px;
+    height: 450px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
-    margin-top: -70px;
     margin-right: 80px !important;
-    transform: translateX(40px);
+    transform: translateX(-25px);
     text-decoration: none;
-        -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
     position: relative;
     border-radius: 20px;
     overflow: hidden;
@@ -554,25 +552,19 @@
     left: 50%;
   }
 
-
-
-  
-
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>img {
     width: 100%;
-    height: 80%;
+    height: 65%;
     border-radius: 10px;
   }
 
 
-
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>div {
     width: 100%;
-    height: 15%;
+    height: 35%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin-bottom: 50px;
   }
 
   .emp>.sub>div.swiper>div.swiper-wrapper>.swiper-slide>div>p:nth-of-type(1) {
