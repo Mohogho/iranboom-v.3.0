@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css?v=3.4.2">
+    <link rel="stylesheet" href="css/main.css?v=3.5.0">
     <title>مشاوران</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
@@ -84,7 +84,7 @@
 
 
 <!-- هر ملک از اینجا شروع میشه -->
-            <a href="">
+            <a href="homes.html">
                 <img src="./images/11.jpg" alt="">
                 <div>
                     <p>شمال شهرآرا کیا ۱۲۰ متری تک واحدی </p>
@@ -97,7 +97,7 @@
 
 
 
-            <a href="">
+            <a href="homes.html">
                 <img src="./images/11.jpg" alt="">
                 <div>
                     <p>شمال شهرآرا کیا ۱۲۰ متری تک واحدی</p>
@@ -105,7 +105,7 @@
                     <p>سام</p>
                 </div>
             </a>
-            <a href="">
+            <a href="homes.html">
                 <img src="./images/11.jpg" alt="">
                 <div>
                     <p>شمال شهرآرا کیا ۱۲۰ متری تک واحدی</p>
@@ -205,7 +205,7 @@
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
 
-            homes.forEach((home, index) => {
+            homes.forEach((homes, index) => {
                 home.style.display = (index >= start && index < end) ? "block" : "none";
             });
 
