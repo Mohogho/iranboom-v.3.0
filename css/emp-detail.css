@@ -6,7 +6,7 @@
         flex-flow: column;
         align-items: center;
         margin-bottom: 50px;
-                margin-top: 100px;
+        margin-top: 100px;
 
 
     }
@@ -154,7 +154,8 @@
         padding-left: 60px;
         color: #666;
     }
-        .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(5) {
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(5) {
         margin-top: 10px;
         padding-left: 60px;
         color: #666;
@@ -411,18 +412,19 @@
 @media (min-width: 992px) and (max-width: 1200px) {
     .introduce {
         width: 100%;
-        height: 800px;
+        height: 1100px;
         display: flex;
         flex-flow: column;
         align-items: center;
         margin-bottom: 50px;
         margin-top: 50px;
+        margin-top: 120px;
 
     }
 
     .introduce>div:nth-of-type(1) {
         width: 40%;
-        height: 20%;
+        height: 10%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: end;
@@ -430,6 +432,7 @@
         gap: 20px;
         text-align: center;
         direction: rtl;
+
 
     }
 
@@ -447,15 +450,15 @@
 
 
     .introduce>div:nth-of-type(2) {
-        width: 90%;
-        height: 80%;
+        width: 100%;
+        height: 90%;
         display: flex;
         flex-flow: row-reverse nowrap;
     }
 
     .introduce>div:nth-of-type(2)>div {
         width: 50%;
-        height: 100%;
+        height: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -463,8 +466,8 @@
 
 
     .introduce>div:nth-of-type(2)>div.img>img {
-        width: 90%;
-        height: 80%;
+        width: 95%;
+        height: 90%;
         border-radius: 20px;
     }
 
@@ -480,18 +483,71 @@
         align-items: start;
     }
 
+
+    .introduce>div:nth-of-type(2)>div.text>div>div {
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 40px;
+
+    }
+
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>a>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div>a>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #F3F5F6;
+        border: 1px solid #D5D5D6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-4px);
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>ul {
+        width: 100%;
+        /* مثل p */
+        padding-left: 20px;
+        list-style-position: inside;
+
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>ul>li {
+        color: #666;
+    }
+
     .introduce>div:nth-of-type(2)>div.text>div>h1 {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
 
     }
 
     .introduce>div:nth-of-type(2)>div.text>div>p {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: justify;
     }
 
     .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(2) {
-        margin-top: 20px;
+        margin-top: 10px;
         padding-left: 60px;
         color: #666;
     }
@@ -501,6 +557,30 @@
         text-decoration: none;
         color: #000000;
 
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(2) {
+        margin-top: 10;
+        padding-left: 60px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(3) {
+        margin-top: 10px;
+        padding-left: 60px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(4) {
+        margin-top: 10px;
+        padding-left: 60px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(5) {
+        margin-top: 10px;
+        padding-left: 60px;
+        color: #666;
     }
 
 
@@ -741,11 +821,12 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .introduce {
         width: 100%;
-        height: 1400px;
+        height: auto;
         display: flex;
         flex-flow: column;
         align-items: center;
         position: relative;
+        margin-top: 50px;
 
     }
 
@@ -790,6 +871,87 @@
         justify-content: center;
         align-items: center;
     }
+
+
+
+    .introduce>div:nth-of-type(2)>div.text>div>div {
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 40px;
+
+    }
+
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>a>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div>a>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #F3F5F6;
+        border: 1px solid #D5D5D6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-4px);
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>ul {
+    list-style-position: inside; /* بولت داخل padding li قرار گیرد */
+    padding-left: 0;              /* حذف padding پیش‌فرض ul */
+    margin: 0 auto;               /* وسط چین کردن کل ul */
+    width: max-content;           /* اندازه ul متناسب با محتوا */
+    text-align: right   ;              /* متن داخل li به چپ */
+
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>ul>li {
+        color: #666;
+        font-size: 1px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(2) {
+        margin-top: 10;
+        color: #666;
+        text-align: center;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(3) {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(4) {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(5) {
+        margin-top: 10px;
+        color: #666;
+    }
+
+
+
+
 
     .introduce>div:nth-of-type(2)>div.img {
         height: 50%;
@@ -1144,11 +1306,12 @@
 @media (min-width: 560px) and (max-width: 768px) {
     .introduce {
         width: 100%;
-        height: 1400px;
+        height: auto;
         display: flex;
         flex-flow: column;
         align-items: center;
         position: relative;
+        margin-top: 50px;
 
     }
 
@@ -1219,6 +1382,88 @@
         justify-content: start;
         align-items: center;
     }
+
+
+
+
+    .introduce>div:nth-of-type(2)>div.text>div>div {
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 40px;
+
+    }
+
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>a>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div>a>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #F3F5F6;
+        border: 1px solid #D5D5D6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-4px);
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>ul {
+    list-style-position: inside; /* بولت داخل padding li قرار گیرد */
+    padding-left: 0;              /* حذف padding پیش‌فرض ul */
+    margin: 0 auto;               /* وسط چین کردن کل ul */
+    width: max-content;           /* اندازه ul متناسب با محتوا */
+    text-align: right   ;              /* متن داخل li به چپ */
+
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>ul>li {
+        color: #666;
+        font-size: 14px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(2) {
+        margin-top: 10;
+        color: #666;
+        text-align: center  ;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(3) {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(4) {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(5) {
+        margin-top: 10px;
+        color: #666;
+    }
+
+
+
+
 
     .introduce>div:nth-of-type(2)>div.text>div>h1 {
         margin-bottom: 20px;
@@ -1546,11 +1791,12 @@
 @media (max-width: 560px) {
     .introduce {
         width: 100%;
-        height: 1200px;
+        height: auto;
         display: flex;
         flex-flow: column;
         align-items: center;
         position: relative;
+        margin-top: 50px;
 
     }
 
@@ -1621,6 +1867,82 @@
         flex-flow: column;
         justify-content: start;
         align-items: center;
+    }
+
+        .introduce>div:nth-of-type(2)>div.text>div>div {
+        width: 100%;
+        display: flex;
+        flex-flow: row-reverse nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-top: 40px;
+
+    }
+
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>a>img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div>a>img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #F3F5F6;
+        border: 1px solid #D5D5D6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(-4px);
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>div>div>a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>ul {
+    list-style-position: inside; /* بولت داخل padding li قرار گیرد */
+    padding-left: 0;              /* حذف padding پیش‌فرض ul */
+    margin: 0 auto;               /* وسط چین کردن کل ul */
+    width: max-content;           /* اندازه ul متناسب با محتوا */
+    text-align: right   ;              /* متن داخل li به چپ */
+
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>ul>li {
+        color: #666;
+        font-size: 12px;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(2) {
+        margin-top: 10;
+        color: #666;
+                text-align: center  ;
+
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(3) {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(4) {
+        margin-top: 10px;
+        color: #666;
+    }
+
+    .introduce>div:nth-of-type(2)>div.text>div>p:nth-of-type(5) {
+        margin-top: 10px;
+        color: #666;
     }
 
 
