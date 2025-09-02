@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="css/main.css?v=3.5.8">
     <title>مشاوران</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>مشاوران املاک ایران بوم | معرفی معید ارزندی - خرید و فروش ملک در مهرشهر کرج</title>
+    <meta name="description"
+        content="تیم مشاوران ایران بوم، متخصص در خرید، فروش و اجاره املاک مسکونی، اداری و تجاری در مهرشهر کرج. با تجربه و مشاوره حرفه‌ای در کنار شما هستیم.">
+
 
 </head>
 
@@ -27,7 +31,7 @@
                 <ul>
                     <li><a href="./about.html" class="clickable">درباره ایران بوم</a></li>
                     <li><a href="./index.html" class="clickable">خانه</a></li>
-                    <li><a href="#footer" class="clickable">ارتباط با ما</a></li>
+                    <li><a href="#contact" class="clickable">ارتباط با ما</a></li>
                 </ul>
             </div>
             <div>
@@ -87,7 +91,8 @@
 
                     <div>
                         <!-- Instagram -->
-                        <a href="https://www.instagram.com/moeed_realtor/" target="_blank" rel="noopener" class="clickable">
+                        <a href="https://www.instagram.com/moeed_realtor/" target="_blank" rel="noopener"
+                            class="clickable">
                             <img src="./images/instagram.png" alt="Instagram">
                         </a>
                         <!-- Telegram -->
@@ -151,6 +156,15 @@
                     <p>معید</p>
                 </div>
             </a>
+            <a href="">
+                <img src="./images/11.jpg" alt="ایران بوم">
+                <div>
+                    <p>شمال شهرآرا کیا ۱۲۰ متری تک واحدی</p>
+                    <p>فروش</p>
+                    <p>معید</p>
+                </div>
+            </a>
+
             <a href="">
                 <img src="./images/11.jpg" alt="ایران بوم">
                 <div>
@@ -244,9 +258,10 @@
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
 
-            homes.forEach((homes, index) => {
+            homes.forEach((home, index) => {
                 home.style.display = (index >= start && index < end) ? "block" : "none";
             });
+
 
             renderPagination();
 

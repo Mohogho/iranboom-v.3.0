@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    margin-top: 20px;
+    margin-top: 50px;
   }
 
   .melk-large {
@@ -89,15 +89,23 @@
   .melk-texts>div>p:nth-of-type(1) {
     padding-top: 30px;
     padding-bottom: 30px;
-
-
   }
 
   .melk-texts>div>p:nth-of-type(2) {
+    color: #444;
+    font-size: 14px;
+  }
+
+  .melk-texts>div>article {
     padding-bottom: 50px;
     padding-right: 30px;
     color: #444;
     font-size: 14px;
+    text-align: justify;
+    line-height: 27px;
+    direction: rtl;
+    padding-right: 30px;
+    padding-left: 30px;
 
 
   }
@@ -134,6 +142,21 @@
     margin-bottom: 30px;
     margin-top: 30px;
     font-weight: bold;
+  }
+
+  .melk-video {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .melk-video>video {
+    width: 80%;
+    border-radius: 20px;
   }
 
 }
@@ -235,10 +258,20 @@
   }
 
   .melk-texts>div>p:nth-of-type(2) {
+    color: #444;
+    font-size: 14px;
+  }
+
+  .melk-texts>div>article {
     padding-bottom: 50px;
     padding-right: 30px;
     color: #444;
     font-size: 14px;
+    text-align: justify;
+    line-height: 27px;
+    direction: rtl;
+    padding-right: 30px;
+    padding-left: 30px;
 
 
   }
@@ -270,10 +303,26 @@
     font-size: 53px;
     font-weight: 400;
   }
-    .melk-texts>p {
+
+  .melk-texts>p {
     margin-bottom: 30px;
     margin-top: 30px;
     font-weight: bold;
+  }
+
+  .melk-video {
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .melk-video>video {
+    width: 90%;
+    border-radius: 20px;
   }
 }
 
@@ -373,10 +422,20 @@
   }
 
   .melk-texts>div>p:nth-of-type(2) {
+    color: #444;
+    font-size: 12px;
+  }
+
+  .melk-texts>div>article {
     padding-bottom: 50px;
     padding-right: 30px;
     color: #444;
     font-size: 12px;
+    text-align: justify;
+    line-height: 30px;
+    direction: rtl;
+    padding-right: 30px;
+    padding-left: 30px;
 
 
   }
@@ -409,12 +468,26 @@
     font-weight: 400;
   }
 
-    .melk-texts>p {
+  .melk-texts>p {
     margin-bottom: 30px;
     margin-top: 30px;
     font-size: 12px;
     font-weight: bold;
   }
+
+    .melk-video{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .melk-video>video{
+      width: 90%;
+      border-radius: 20px;
+    }
 }
 
 @media (min-width: 560px) and (max-width: 768px) {
@@ -515,13 +588,23 @@
   }
 
   .melk-texts>div>p:nth-of-type(2) {
+    color: #444;
+    font-size: 12px;
+  }
+
+  .melk-texts>div>article {
     padding-bottom: 50px;
     padding-right: 30px;
     color: #444;
     font-size: 12px;
-
+    text-align: justify;
+    line-height: 30px;
+    direction: rtl;
+    padding-right: 30px;
+    padding-left: 30px;
 
   }
+
 
   .melk-texts>div:nth-of-type(2)>p:nth-of-type(2) {
     line-height: 25px;
@@ -554,13 +637,27 @@
     font-size: 40px;
     font-weight: 400;
   }
-  
-    .melk-texts>p {
+
+  .melk-texts>p {
     margin-bottom: 30px;
     margin-top: 30px;
     font-size: 12px;
     font-weight: bold;
   }
+
+      .melk-video{
+    width: 100%;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .melk-video>video{
+      width: 90%;
+      border-radius: 20px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -669,8 +766,22 @@
 
   }
 
-  .melk-texts>div:nth-of-type(2)>p:nth-of-type(2) {
-    line-height: 25px;
+  .melk-texts>div>p:nth-of-type(2) {
+    color: #444;
+    font-size: 12px;
+  }
+
+  .melk-texts>div>article {
+    padding-bottom: 50px;
+    padding-right: 30px;
+    color: #444;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 30px;
+    direction: rtl;
+    padding-right: 30px;
+    padding-left: 30px;
+
   }
 
   .melk-texts>div>ul {
@@ -700,12 +811,25 @@
     font-size: 40px;
     font-weight: 400;
   }
-  
-    .melk-texts>p {
+
+  .melk-texts>p {
     margin-bottom: 30px;
     margin-top: 30px;
     font-size: 12px;
     font-weight: bold;
     text-align: center;
   }
+      .melk-video{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .melk-video>video{
+      width: 90%;
+      border-radius: 20px;
+    }
 }

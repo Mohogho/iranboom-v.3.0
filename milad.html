@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css?v=3.5.8">
-    <title>مشاوران</title>
+    <title>مشاوران ایران بوم | معرفی میلاد مظفری - مشاور املاک مهرشهر کرج</title>
+    <meta name="description"
+        content="میلاد مظفری، مشاور و کارشناس خرید و فروش آپارتمان و ویلا در مهرشهر کرج با ۵ سال تجربه تخصصی. ارائه خدمات مشاوره ملکی، تهاتر، مشارکت در ساخت و سرمایه‌گذاری در املاک.">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
 </head>
@@ -27,7 +29,7 @@
                 <ul>
                     <li><a href="./about.html" class="clickable">درباره ایران بوم</a></li>
                     <li><a href="./index.html" class="clickable">خانه</a></li>
-                    <li><a href="#footer" class="clickable">ارتباط با ما</a></li>
+                    <li><a href="#contact" class="clickable">ارتباط با ما</a></li>
                 </ul>
             </div>
             <div>
@@ -38,7 +40,8 @@
                     <li><a href="./profile.html" class="clickable">پروفایل</a></li> <!-- در صورت لاگین نمایش داده شه -->
                     <li><a href="./login.html" class="clickable">ورود / ثبت نام</a></li>
                     <li>
-                        <p><a href="tel: 02633412889" style="text-decoration: none; color: white;" class="clickable">02633412889</a></p>
+                        <p><a href="tel: 02633412889" style="text-decoration: none; color: white;"
+                                class="clickable">02633412889</a></p>
                     </li>
 
                 </ul>
@@ -95,7 +98,8 @@
 
                     </p>
                     <div>
-                        <a href="https://www.instagram.com/milad_realtor/" target="_blank" rel="noopener" class="clickable">
+                        <a href="https://www.instagram.com/milad_realtor/" target="_blank" rel="noopener"
+                            class="clickable">
                             <img src="./images/instagram.png" alt="ایران بوم">
                         </a>
                         <a href="tg://resolve?domain=miladrealtor90" class="clickable">
@@ -104,7 +108,8 @@
                         <a href="https://wa.me/989124608739" target="_blank" rel="noopener" class="clickable">
                             <img src="./images/whatsapp.png" alt="ایران بوم">
                         </a>
-                        <a href="https://www.youtube.com/@Milad.Realtor" target="_blank" rel="noopener" class="clickable">
+                        <a href="https://www.youtube.com/@Milad.Realtor" target="_blank" rel="noopener"
+                            class="clickable">
                             <img src="./images/youtube.png" alt="YouTube">
                         </a>
                         <div>
@@ -165,6 +170,7 @@
                     <p>میلاد</p>
                 </div>
             </a>
+            
 
         </div>
         <div class="pagination" id="pagination"></div>
@@ -250,7 +256,7 @@
             const start = (page - 1) * itemsPerPage;
             const end = start + itemsPerPage;
 
-            homes.forEach((homes, index) => {
+            homes.forEach((home, index) => {
                 home.style.display = (index >= start && index < end) ? "block" : "none";
             });
 
