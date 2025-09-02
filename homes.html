@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css?v=3.5.2">
+    <link rel="stylesheet" href="css/main.css?v=3.5.7">
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5/dist/basicLightbox.min.css">
@@ -16,29 +16,31 @@
     <!-- menu section -->
     <section class="menue" style="position: relative; ">
         <div class="bburger-bar">
-            <a href="javascript:void(0);" class="burger-bar" onclick="myFunction()"><img
+            <a href="javascript:void(0);" class="burger-bar clickable" onclick="myFunction()"><img
                     src="./images/hamburger-menu-icon-png-white-10.jpg" alt=""></a>
         </div>
         <div class="llogo-in-mobile">
-            <a href="./index.html" class="logo-in-mobile"><img src="./images/logo.png" alt=""></a>
+            <a href="./index.html" class="logo-in-mobile clickable"><img src="./images/logo.png" alt=""></a>
         </div>
         <nav id="myLinks">
             <div>
                 <ul>
-                    <li><a href="./about.html">درباره ایران بوم</a></li>
-                    <li><a href="#services">خدمات</a></li>
-                    <li><a href="./sms_login.html">ارتباط با ما</a></li>
+                    <li><a href="./about.html" class="clickable">درباره ایران بوم</a></li>
+                    <li><a href="./index.html" class="clickable">خانه</a></li>
+                    <li><a href="#footer" class="clickable">ارتباط با ما</a></li>
                 </ul>
             </div>
             <div>
-                <a href="index.html"><img src="./images/logo.png" alt=""></a>
+                <a href="index.html" class="clickable"><img src="./images/logo.png" alt=""></a>
             </div>
             <div>
                 <ul>
-                    <li><a href="./login.html">ورود / ثبت نام</a></li>
+                    <li><a href="./profile.html" class="clickable">پروفایل</a></li> <!-- در صورت لاگین نمایش داده شه -->
+                    <li><a href="./login.html" class="clickable">ورود / ثبت نام</a></li>
                     <li>
-                        <p><a href="tel: 02633412889" style="text-decoration: none; color: white;">02633412889</a></p>
+                        <p><a href="tel: 02633412889" style="text-decoration: none; color: white;" class="clickable">02633412889</a></p>
                     </li>
+
                 </ul>
             </div>
         </nav>
@@ -54,14 +56,14 @@
 
         <!-- تصاویر کوچک -->
         <div class="melk-thumbnails">
-            <img src="images/gallery5.jpg" alt="">
-            <img src="images/gallery1.jfif" alt="">
-            <img src="images/gallery6.jpg" alt="">
-            <img src="images/gallery4.jpg" alt="">
-            <img src="images/gallery2.jpg" alt="">
-            <img src="images/gallery3.jpg" alt="">
-            <img src="images/gallery2.jpg" alt="">
-            <img src="images/gallery3.jpg" alt="">
+            <img src="images/gallery5.jpg" alt="" class="clickable">
+            <img src="images/gallery1.jfif"alt="" class="clickable">
+            <img src="images/gallery6.jpg" alt="" class="clickable">
+            <img src="images/gallery4.jpg" alt="" class="clickable">
+            <img src="images/gallery2.jpg" alt="" class="clickable">
+            <img src="images/gallery3.jpg" alt="" class="clickable">
+            <img src="images/gallery2.jpg" alt="" class="clickable">
+            <img src="images/gallery3.jpg" alt="" class="clickable">
         </div>
     </section>
 
@@ -70,8 +72,8 @@
         <div>
             <p>ویژگی‌های ملک</p>
             <ul>
-                <li>اتاق خواب ۹</li>
-                <li> 1 خمام</li>
+                <li>9 اتاق خواب</li>
+                <li> 1 حمام</li>
                 <li>1500 متر </li>
             </ul>
         </div>
@@ -107,7 +109,7 @@
     <footer id="contact">
         <div>
             <div>
-                <div><a href="index.html"><img src="./images/logo.png" alt=""></a>
+                <div><a href="index.html" class="clickable"><img src="./images/logo.png" alt=""></a>
                     <h1>ایران بوم</h1>
                 </div>
                 <div>
@@ -122,10 +124,10 @@
                 <p>آدرس دفتر : کرج ، مهرشهر ، خیابان ۱۰۰ غربی ، پیچک دوم ،<br> فرعی اول ، ساختمان اداری مهرشهر طبقه ۴
                     واحد ۳۱
                 </p>
-                <p><a href="tel: 02633412889" style="text-decoration: none; color: white;">شماره تلفن دفتر :
-                        02633412889</a></p>
-                <p><a href="tel: +989123854954" style="text-decoration: none; color: white;">شماره تلفن مدیریت :
-                        09123854954</a>
+                <p><a href="tel: 02633412889" style="text-decoration: none; color: white;" class="clickable">شماره تلفن
+                        دفتر : 02633412889</a></p>
+                <p><a href="tel: +989123854954" style="text-decoration: none; color: white;" class="clickable">شماره
+                        تلفن مدیریت : 09123854954</a>
                 </p>
                 <p></p>
                 <p>ایمیل : Iranboomcompany@gmail.com
@@ -134,9 +136,10 @@
             <div>
                 <p>ما را دنبال کنید</p>
                 <div>
-                    <a href="#"><img src="./images/instagram.png" alt=""></a>
-                    <a href="https://web.telegram.org/k/#@m_ali_nateghi"><img src="./images/telegram.png" alt=""></a>
-                    <a href="#"><img src="./images/linkedin.png" alt=""></a>
+                    <a href="#" class="clickable"><img src="./images/instagram.png" alt=""></a>
+                    <a href="https://web.telegram.org/k/#@m_ali_nateghi" class="clickable"><img
+                            src="./images/telegram.png" alt=""></a>
+                    <a href="#" class="clickable"><img src="./images/linkedin.png" alt=""></a>
                 </div>
             </div>
         </div>
@@ -170,7 +173,7 @@
         });
 
 
-        
+
     </script>
 </body>
 

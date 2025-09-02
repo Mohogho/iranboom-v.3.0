@@ -6,34 +6,36 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="css/main.css?v=1.1">
-    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
   <title>ایران بوم</title>
 </head>
 
 <body>
-  <section class="menuabout">
+  <section class="menu">
     <div class="bburger-bar">
-      <a href="javascript:void(0);" class="burger-bar" onclick="myFunction()"><img
+      <a href="javascript:void(0);" class="burger-bar clickable" onclick="myFunction()"><img
           src="./images/hamburger-menu-icon-png-white-10.jpg" alt=""></a>
     </div>
     <div class="llogo-in-mobile">
-      <a href="./index.html" class="logo-in-mobile"><img src="./images/logo.png" alt=""></a>
+      <a href="./index.html" class="logo-in-mobile clickable"><img src="./images/logo.png" alt=""></a>
     </div>
     <nav id="myLinks">
       <div>
-        <ul style="padding: 0px;">
-          <li><a href="./index.html">خانه</a></li>
-          <li><a href="#contact">ارتباط با ما</a></li>
+        <ul>
+          <li><a href="./index.html" style="border-bottom: none;">خانه</a></li>
+          <li><a href="#contacte">ارتباط با ما</a></li>
         </ul>
       </div>
       <div>
-        <a href="index.html"><img src="./images/logo.png" alt=""></a>
+        <a href="index.html" class="clickable"><img src="./images/logo.png" alt=""></a>
       </div>
       <div>
-        <ul style="padding: 0px;">
+        <ul>
+          <li><a href="./profile.html">پروفایل</a></li> <!-- در صورت لاگین نمایش داده شه -->
+          <li><a href="./login.html">ورود / ثبت نام</a></li>
           <li>
             <p><a href="tel: 02633412889" style="text-decoration: none; color: white;">02633412889</a></p>
           </li>
@@ -348,10 +350,10 @@
   </div>
 
   <!-- footer -->
-  <footer id="contact">
+  <footer id="contacte">
     <div>
       <div>
-        <div><a href="index.html"><img src="./images/logo.png" alt=""></a>
+        <div><a href="index.html" class="clickable"><img src="./images/logo.png" alt=""></a>
           <h1>ایران بوم</h1>
         </div>
         <div>
@@ -364,17 +366,22 @@
         <p></p>
         <p>آدرس دفتر : کرج ، مهرشهر ، خیابان ۱۰۰ غربی ، پیچک دوم ،<br> فرعی اول ، ساختمان اداری مهرشهر طبقه ۴ واحد ۳۱
         </p>
-        <p><a href="tel: 02633412889" style="text-decoration: none; color: white;">شماره تلفن دفتر : 02633412889</a></p>
-        <p><a href="tel: +989123854954" style="text-decoration: none; color: white;">شماره تلفن مدیریت : 09123854954</a></p>
+        <p><a href="tel: 02633412889" style="text-decoration: none; color: white;" class="clickable">شماره تلفن دفتر :
+            02633412889</a></p>
+        <p><a href="tel: +989123854954" style="text-decoration: none; color: white;" class="clickable">شماره تلفن مدیریت
+            : 09123854954</a>
+        </p>
+        <p></p>
         <p>ایمیل : Iranboomcompany@gmail.com
         </p>
       </div>
       <div>
         <p>ما را دنبال کنید</p>
         <div>
-          <a href="#"><img src="./images/instagram.png" alt=""></a>
-          <a href="https://web.telegram.org/k/#@m_ali_nateghi"><img src="./images/telegram.png" alt=""></a>
-          <a href="#"><img src="./images/linkedin.png" alt=""></a>
+          <a href="#" class="clickable"><img src="./images/instagram.png" alt=""></a>
+          <a href="https://web.telegram.org/k/#@m_ali_nateghi" class="clickable"><img src="./images/telegram.png"
+              alt=""></a>
+          <a href="#" class="clickable"><img src="./images/linkedin.png" alt=""></a>
         </div>
       </div>
     </div>

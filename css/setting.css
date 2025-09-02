@@ -7,3 +7,6 @@
     padding: 0;
     font-family: Farsi;
 }
+.clickable{
+    -webkit-tap-highlight-color: transparent;
+}
