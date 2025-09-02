@@ -227,7 +227,7 @@
         width: 100%;
         display: none;
         flex-flow: column nowrap;
-        background-color: rgba(24, 24, 24, 0.747);
+        background-color: rgba(24, 24, 24, 0.9);
         margin-top: 10px;
 
     }
@@ -391,7 +391,7 @@
         width: 100%;
         display: none;
         flex-flow: column nowrap;
-        background-color: rgba(24, 24, 24, 0.747);
+        background-color: rgba(24, 24, 24, 0.9);
         margin-top: 10px;
     }
     .llogo-in-mobile{
@@ -552,7 +552,7 @@
         width: 100%;
         display: none;
         flex-flow: column nowrap;
-        background-color: rgba(24, 24, 24, 0.747);
+        background-color: rgba(24, 24, 24, 0.9);
         margin-top: 5px;
     }
     .llogo-in-mobile{
