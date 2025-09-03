@@ -44,33 +44,43 @@
 
 
 /* جدول اصلی */
-.super-admin-user-table table {
-    border-collapse: collapse;
+/* کانتینر اسکرول جدول */
+.super-admin-user-table .table-container {
     width: 90%;
-    background: #fff;
+    max-height: 520px;   /* برای اسکرول عمودی */
+    overflow-x: auto;    /* اسکرول افقی */
+    overflow-y: auto;    /* اسکرول عمودی */
     border-radius: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* جدول داخل کانتینر */
+.super-admin-user-table .table-container table {
+    width: 100%;
+    min-width: 700px; /* وقتی ستون‌ها زیاد شد اسکرول افقی بیاد */
+    border-collapse: collapse;
+    background: #fff;
+}
+
+
 /* هدر جدول */
-.super-admin-user-table thead {
+.super-admin-user-table .table-container thead {
     background: #36304A;
     color: #fff;
 }
 
-.super-admin-user-table thead th {
+.super-admin-user-table .table-container thead th {
     padding: 12px;
     text-align: center;
     font-size: 14px;
 }
 
 /* بدنه جدول */
-.super-admin-user-table tbody {
+.super-admin-user-table .table-container tbody {
     counter-reset: rowNumber;
 }
 
-.super-admin-user-table tbody td {
+.super-admin-user-table .table-container tbody td {
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #eee;
@@ -78,21 +88,21 @@
 }
 
 /* استایل ردیف‌ها */
-.super-admin-user-table tbody tr:nth-child(even) {
+.super-admin-user-table .table-container tbody tr:nth-child(even) {
     background: #f9f9f9;
 }
 
-.super-admin-user-table tbody tr:hover {
+.super-admin-user-table .table-container tbody tr:hover {
     background: #f1f1f1;
 }
 
 
 /* گرد کردن گوشه‌های پایینی جدول */
-.super-admin-user-table tbody tr:last-child td:first-child {
+.super-admin-user-table .table-container tbody tr:last-child td:first-child {
     border-bottom-right-radius: 20px;
 }
 
-.super-admin-user-table tbody tr:last-child td:last-child {
+.super-admin-user-table .table-container tbody tr:last-child td:last-child {
     border-bottom-left-radius: 20px;
 }
 
@@ -104,6 +114,8 @@
     gap: 5px;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    direction: ltr;
+    margin-top: 5px !important;
 }
 
 .pagination button {
@@ -139,13 +151,13 @@
         padding-right: 8px;
     }
 
-    .super-admin-user-table table {
+    .super-admin-user-table .table-container table {
         width: 90%;
 
     }
 
-    .super-admin-user-table table th,
-    .super-admin-user-table table td {
+    .super-admin-user-table .table-container table th,
+    .super-admin-user-table .table-container table td {
         font-size: 8px;
         padding: 8px;
         white-space: nowrap;
@@ -155,6 +167,7 @@
     .pagination {
         justify-content: flex-start;
         gap: 3px;
+    direction: ltr;
     }
 
     .pagination button {

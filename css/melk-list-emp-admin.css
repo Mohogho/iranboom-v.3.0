@@ -1,199 +1,177 @@
-        /* Container اصلی */
-        .ibm-container {
-            max-width: 90%;
-            margin: 40px auto;
-            background: #fff;
-            padding: 20px 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            direction: rtl;
-        }
+.ibm-container {
+    max-width: 90%;
+    margin: 40px auto;
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+}
 
-        .ibm-container h2 {
-            margin-bottom: 20px;
-            color: #333;
-        }
+.ibm-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
 
-        .ibm-add-btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: #fff;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: 0.3s;
-            margin-bottom: 10px;
-            margin-top: 10px;
-        }
+.ibm-add-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
-        .ibm-add-btn:hover {
-            background-color: #218838;
-        }
+.ibm-add-btn:hover {
+    background-color: #218838;
+}
 
-        .ibm-search-box {
-            margin-bottom: 15px;
-        }
+.ibm-search-box {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
 
-        /* سرچ باکس وسط */
-        .ibm-search-box {
-            margin-bottom: 15px;
-            display: flex;
-            justify-content: center;
-        }
+.ibm-search-box input {
+    width: 90%;
+    max-width: 400px;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 
-        .ibm-search-box input {
-            width: 90%;
-            max-width: 400px;
-            height: 50px;
-            padding-right: 10px;
-            border-radius: 20px;
-            border: 1px solid #ccc;
-            font-size: 16px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-        }
+.ibm-table-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
 
-        /* ظرف جدول با اسکرول افقی */
-        .ibm-table-wrapper {
-            width: 100%;
-            overflow-x: auto;
-            border-radius: 20px;
-        }
+.ibm-table-wrapper table.ibm-table {
+    width: 100%;
+    border-collapse: collapse;
+}
 
-        table.ibm-table {
-            width: 100%;
-            min-width: 600px;
-            border-collapse: collapse;
-        }
+th.ibm-th,
+td.ibm-td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+}
 
-        th.ibm-th,
-        td.ibm-td {
-            padding: 12px 15px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-            white-space: nowrap;
-            max-width: 200px;
-        }
+th.ibm-th:first-child,
+td.ibm-td:first-child {
+    width: 50px;
+}
 
-        th.ibm-th:first-child,
-        td.ibm-td:first-child {
-            width: 50px;
-        }
+th.ibm-th {
+    background-color: #343a40;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
 
-        th.ibm-th {
-            background-color: #343a40;
-            color: #fff;
-        }
+tr.ibm-tr:hover {
+    background-color: #f1f1f1;
+}
 
-        tr.ibm-tr:hover {
-            background-color: #f1f1f1;
-        }
+.ibm-action-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-left: 5px;
+}
 
-        .ibm-action-btn {
-            padding: 6px 12px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: 0.3s;
-            margin-left: 5px;
-        }
+.ibm-edit-btn {
+    background-color: #ffc107;
+    color: #fff;
+}
 
-        .ibm-edit-btn {
-            background-color: #ffc107;
-            color: #fff;
-        }
+.ibm-edit-btn:hover {
+    background-color: #e0a800;
+}
 
-        .ibm-edit-btn:hover {
-            background-color: #e0a800;
-        }
+.ibm-delete-btn {
+    background-color: #dc3545;
+    color: #fff;
+}
 
-        .ibm-delete-btn {
-            background-color: #dc3545;
-            color: #fff;
-        }
+.ibm-delete-btn:hover {
+    background-color: #c82333;
+}
 
-        .ibm-delete-btn:hover {
-            background-color: #c82333;
-        }
+.ibm-table-body-wrapper {
+    max-height: 400px; /* ارتفاع جدول قابل اسکرول */
+    overflow-y: auto;
+    border-radius: 0 0 12px 12px;
+}
 
-        .ibm-pagination {
-            margin-top: 15px;
-            text-align: center;
-            direction: ltr;
-        }
+.ibm-pagination {
+    margin-top: 15px;
+    text-align: center;
+    direction: ltr;
+}
 
-        .ibm-pagination button {
-            margin: 2px;
-            padding: 6px 12px;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-            background-color: #fff;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+.ibm-pagination button {
+    margin: 2px;
+    padding: 6px 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
 
-        .ibm-pagination button.active {
-            background-color: #343a40;
-            color: #fff;
-        }
+.ibm-pagination button.active {
+    background-color: #343a40;
+    color: #fff;
+}
 
-        .ibm-pagination button:hover:not(.active) {
-            background-color: #eee;
-        }
+.ibm-pagination button:hover:not(.active) {
+    background-color: #eee;
+}
 
+td.ibm-td.ibm-address {
+    text-overflow: ellipsis;
+}
 
+/* ریسپانسیو */
+@media (max-width: 768px) {
+    th.ibm-th,
+    td.ibm-td {
+        max-width: 120px;
+        padding: 8px 10px;
+        font-size: 10px;
+    }
 
-        /* همه سلول‌ها */
-        th.ibm-th,
-        td.ibm-td {
-            padding: 12px 15px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-            white-space: nowrap;
-            max-width: 200px;
-            overflow: hidden;
-        }
+    .ibm-container h2 {
+        text-align: center;
+        font-size: 14px;
+    }
 
-        /* فقط ستون آدرس سه نقطه بگیرد */
-        td.ibm-td.ibm-address {
-            text-overflow: ellipsis;
-        }
+    .ibm-add-btn {
+        display: block;
+        width: 30%;
+        margin: 0 auto 15px auto;
+        text-align: center;
+        font-size: 10px;
+    }
 
-
-
-
-        @media (max-width: 768px) {
-
-            th.ibm-th,
-            td.ibm-td {
-                max-width: 120px;
-                padding: 8px 10px;
-                font-size: 10px;
-                /* فونت جدول */
-            }
-
-            .ibm-container h2 {
-                text-align: center;
-                font-size: 14px;
-                /* تیتر هم کوچیک‌تر شه */
-            }
-
-            .ibm-add-btn {
-                display: block;
-                width: 30%;
-                margin: 0 auto 15px auto;
-                /* وسط‌چین */
-                text-align: center;
-                font-size: 10px;
-                /* کوچیک‌تر شدن متن دکمه */
-            }
-
-            .ibm-search-box input {
-                font-size: 10px;
-                /* فونت داخل سرچ */
-            }
-        }
-
-        
+    .ibm-search-box input {
+        font-size: 10px;
+    }
+}
