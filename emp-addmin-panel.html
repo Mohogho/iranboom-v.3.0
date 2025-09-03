@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>پنل مشاوران ایران بوم</title>
+  <link rel="stylesheet" href="css/main.css?v=3.6.0">
+</head>
+
+<body>
+  <header class="ib-header">به پنل مشاوران ایران بوم خوش آمدید.</header>
+
+  <div class="ib-container">
+    <h2 class="ib-title">ثبت ملک جدید</h2>
+    <form>
+      <label class="ib-label">تصاویر ملک (حداقل 8 تصویر)</label>
+      <input class="ib-input ib-input-file" type="file" name="images" accept="image/*" multiple required>
+
+      <label class="ib-label">ویدیو ملک (اختیاری)</label>
+      <input class="ib-input ib-input-file" type="file" name="video" accept="video/*">
+
+      <label class="ib-label">نام ملک</label>
+      <input class="ib-input" type="text" name="title" placeholder="مثال: آپارتمان 200 متری در بلوار شهرداری" required>
+
+      <label class="ib-label">ویژگی‌های ملک</label>
+      <div class="ib-feature-input">
+        <input class="ib-input" type="text" id="featureText" placeholder="مثال: 9 اتاق خواب">
+        <button type="button" class="ibb-button" onclick="addFeature()">افزودن</button>
+      </div>
+      <ul class="ib-features-list" id="featureList"></ul>
+
+      <label class="ib-label">توضیحات کلی</label>
+      <textarea id="description" class="ib-textarea" name="description" maxlength="4000"
+        placeholder="توضیحات ملک را وارد کنید (حداکثر 400 خط)"></textarea>
+
+      <label class="ib-label">کلمات کلیدی برای بولد کردن</label>
+      <input class="ib-input" type="text" id="keywords" placeholder="کلمات را با کاما جدا کنید">
+
+      <label class="ib-label">پیش‌نمایش توضیحات</label>
+      <ul id="descriptionPreview" class="ib-description-preview"></ul>
+
+      <label class="ib-label">آدرس ملک</label>
+      <input class="ib-input" type="text" name="address" placeholder="آدرس دقیق ملک" required>
+
+      <label class="ib-label">قیمت ملک (تومان)</label>
+      <input class="ib-input" type="text" name="price" placeholder="مثال: ۲,۵۰۰,۰۰۰,۰۰۰ تومان" required>
+
+      <button type="submit" class="ib-button">ثبت ملک</button>
+    </form>
+  </div>
+
+  <script>
+    // --- افزودن ویژگی‌ها ---
+    function addFeature() {
+      const input = document.getElementById('featureText');
+      const value = input.value.trim();
+      if (!value) return;
+
+      const li = document.createElement('li');
+      const removeBtn = document.createElement('button');
+      removeBtn.textContent = '🗑️';
+      removeBtn.className = 'feature-remove-btn';
+      removeBtn.onclick = () => li.remove();
+
+      li.textContent = value + ' ';
+      li.appendChild(removeBtn);
+      document.getElementById('featureList').appendChild(li);
+
+      input.value = '';
+      input.focus();
+    }
+
+    // --- پیش‌نمایش توضیحات ---
+    const desc = document.getElementById('description');
+    const keywords = document.getElementById('keywords');
+    const preview = document.getElementById('descriptionPreview');
+
+    function updatePreview() {
+      let text = desc.value;
+      const keys = keywords.value.split(',').map(k => k.trim()).filter(k => k !== '');
+      keys.forEach(k => {
+        const re = new RegExp(`(${k})`, 'gi');
+        text = text.replace(re, '<strong>$1</strong>');
+      });
+      preview.innerHTML = '<li>' + text.replace(/\n/g, '<br>') + '</li>';
+    }
+
+    desc.addEventListener('input', updatePreview);
+    keywords.addEventListener('input', updatePreview);
+
+    // --- حرکت بین اینپوت‌ها با Enter ---
+    const form = document.querySelector('form');
+    const inputs = Array.from(document.querySelectorAll('input, textarea'));
+
+    inputs.forEach((el, index) => {
+      el.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+          if (el.id === 'description') {
+            if (!e.shiftKey) {
+              e.preventDefault();
+              const next = inputs[index + 1];
+              if (next) next.focus();
+              updatePreview();
+            }
+          } else if (el.id === 'featureText') {
+            e.preventDefault();
+            addFeature();
+          } else if (index === inputs.length - 1) {
+            e.preventDefault();
+            form.submit();
+          } else {
+            e.preventDefault();
+            const next = inputs[index + 1];
+            if (next) next.focus();
+          }
+        }
+      });
+    });
+
+    // --- فرمت قیمت ---
+    const priceInput = document.querySelector('input[name="price"]');
+    let rawPrice = "";
+
+    function toPersianDigits(str) {
+      return str.replace(/\d/g, d => "۰۱۲۳۴۵۶۷۸۹"[d]);
+    }
+
+    function cleanNumber(str) {
+      return str.replace(/[۰-۹]/g, d => "۰۱۲۳۴۵۶۷۸۹".indexOf(d)).replace(/[^\d]/g, "");
+    }
+
+    function formatPriceDisplay(value) {
+      if (!value) return "";
+      let formatted = value.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return toPersianDigits(formatted) + " تومان";
+    }
+
+    // تایپ همزمان و حفظ کرسر پشت آخرین عدد
+    priceInput.addEventListener('input', function (e) {
+      const cursorPos = this.selectionStart;
+      const oldLength = this.value.length;
+
+      rawPrice = cleanNumber(this.value);
+      this.value = formatPriceDisplay(rawPrice);
+
+      const newLength = this.value.length;
+      const diff = newLength - oldLength;
+
+      // کرسر را پشت آخرین رقم قبل از " تومان" قرار می‌دهیم
+      const pos = this.value.length - 6; // طول " تومان" = 6 کاراکتر
+      this.selectionStart = this.selectionEnd = pos >= 0 ? pos : this.value.length;
+    });
+
+    priceInput.addEventListener('focus', function () {
+      this.value = toPersianDigits(rawPrice);
+    });
+
+    priceInput.addEventListener('blur', function () {
+      this.value = formatPriceDisplay(rawPrice);
+    });
+
+
+    form.addEventListener('submit', function(e) {
+  if (!rawPrice) {
+    e.preventDefault(); // جلوی submit را بگیر
+    alert("لطفاً قیمت ملک را وارد کنید!"); // پیام خطا
+    priceInput.focus();
+  }
+});
+  
+
+  </script>
+</body>
+
+</html>

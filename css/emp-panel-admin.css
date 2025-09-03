@@ -1,0 +1,111 @@
+    .ib-header {
+        color: #333;
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      direction: rtl;
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+    .ib-container {
+      max-width: 80%;
+      margin: 30px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      direction: rtl;
+    }
+    .ib-title {
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .ib-label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #444;
+    }
+    .ib-input, .ib-textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 40px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    #featureText{
+        margin-bottom: 5px;
+    }
+    .ib-input-file {
+      border: none;
+    }
+    .ib-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+    .ib-feature-input {
+      display: flex;
+      flex-flow: column;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+    .ib-feature-input input {
+      flex: 1;
+    }
+    .ib-feature-input button {
+      flex-shrink: 0;
+    }
+    .ib-features-list {
+      list-style: circle;
+      padding-right: 20px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+    .ib-button {
+      background: #E9C52F;
+      color: #333;
+      padding: 20px 40px;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .ibb-button {
+      background: #E9C52F;
+      width: 100px;
+      height: 50px;
+      color: #333;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s;
+      margin-bottom: 20px;
+    }
+    .ib-button:hover {
+      background: #d4b92b;
+    }
+    .ib-description-preview {
+      list-style:none;
+      padding:10px;
+      border:1px solid #ccc;
+      border-radius:8px;
+      margin-bottom:20px;
+      color: #333;
+      width: 90%;
+    }
+    strong {
+      color: #d35400;
+    }
+    .feature-remove-btn {
+      margin-right: 10px;
+      cursor: pointer;
+      background: #e74c3c;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 2px 8px;
+      font-size: 12px;
+    }
