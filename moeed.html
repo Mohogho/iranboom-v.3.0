@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css?v=3.5.8">
+  <link rel="stylesheet" href="css/main.css?v=3.6.5">
     <title>مشاوران</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <title>مشاوران املاک ایران بوم | معرفی معید ارزندی - خرید و فروش ملک در مهرشهر کرج</title>
@@ -18,7 +18,7 @@
 
 
     <!-- menu section -->
-    <section class="menue" style="position: relative; ">
+    <section class="menu">
         <div class="bburger-bar">
             <a href="javascript:void(0);" class="burger-bar clickable" onclick="myFunction()"><img
                     src="./images/hamburger-menu-icon-png-white-10.jpg" alt="ایران بوم"></a>
@@ -29,9 +29,9 @@
         <nav id="myLinks">
             <div>
                 <ul>
-                    <li><a href="./about.html" class="clickable">درباره ایران بوم</a></li>
-                    <li><a href="./index.html" class="clickable">خانه</a></li>
-                    <li><a href="#contact" class="clickable">ارتباط با ما</a></li>
+                    <li><a href="./about.html">درباره ایران بوم</a></li>
+                    <li><a href="./index.html">خانه</a></li>
+                    <li><a href="#contact">ارتباط با ما</a></li>
                 </ul>
             </div>
             <div>
@@ -39,13 +39,11 @@
             </div>
             <div>
                 <ul>
-                    <li><a href="./profile.html" class="clickable">پروفایل</a></li> <!-- در صورت لاگین نمایش داده شه -->
-                    <li><a href="./login.html" class="clickable">ورود / ثبت نام</a></li>
+                    <li><a href="./profile.html">پروفایل</a></li> <!-- در صورت لاگین نمایش داده شه -->
+                    <li><a href="./login.html">ورود / ثبت نام</a></li>
                     <li>
-                        <p><a href="tel: 02633412889" style="text-decoration: none; color: white;"
-                                class="clickable">02633412889</a></p>
+                        <p><a href="tel: 02633412889" style="text-decoration: none; color: white;">02633412889</a></p>
                     </li>
-
                 </ul>
             </div>
         </nav>
@@ -224,27 +222,9 @@
     </footer>
 
 
+    <script src="./js/main.js"></script>
 
     <script>
-
-
-
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "flex") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "flex";
-            }
-        }
-        document.addEventListener("click", function (event) {
-            var x = document.getElementById("myLinks");
-            var burgerBar = document.querySelector(".burger-bar");
-            if (x.style.display === "flex" && !burgerBar.contains(event.target)) {
-                x.style.display = "none";
-            }
-        });
-
         const itemsPerPage = 10;
         const homesContainer = document.querySelector(".homes div");
         const homes = homesContainer.querySelectorAll("a");

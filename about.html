@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="ایران بوم؛ دفتر املاک در مهرشهر کرج با تیم متخصص، خدمات حرفه‌ای و راهنمایی در خرید، فروش و سرمایه‌گذاری در املاک.">
+  <meta name="description"
+    content="ایران بوم؛ دفتر املاک در مهرشهر کرج با تیم متخصص، خدمات حرفه‌ای و راهنمایی در خرید، فروش و سرمایه‌گذاری در املاک.">
   <meta name="keywords" content="ایران بوم, املاک مهرشهر, سرمایه گذاری, خرید خانه, فروش ملک, مشاور املاک">
   <meta name="author" content="ایران بوم">
-  <link rel="stylesheet" href="css/main.css?v=3.5.8">
+  <link rel="stylesheet" href="css/main.css?v=3.6.5">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
   <title>درباره ایران بوم | دفتر املاک مهرشهر</title>
@@ -28,8 +29,9 @@
     <nav id="myLinks">
       <div>
         <ul>
-          <li><a href="./index.html" style="border-bottom: none;">خانه</a></li>
-          <li><a href="#contacta">ارتباط با ما</a></li>
+          <li><a href="./about.html">درباره ایران بوم</a></li>
+          <li><a href="./index.html">خانه</a></li>
+          <li><a href="#contact">ارتباط با ما</a></li>
         </ul>
       </div>
       <div>
@@ -132,7 +134,7 @@
 
 
   <!-- footer -->
-  <footer id="contacta">
+  <footer id="contact">
     <div>
       <div>
         <div><a href="index.html" class="clickable"><img src="./images/logo.png" alt="ایران بوم"></a>
@@ -177,6 +179,7 @@
 
   <!--   <script src="./node_modules/swiper/swiper-bundle.min.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/main.js"></script>
 
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -198,23 +201,6 @@
     });
   </script>
 
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "flex") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "flex";
-      }
-    }
-    document.addEventListener("click", function (event) {
-      var x = document.getElementById("myLinks");
-      var burgerBar = document.querySelector(".burger-bar");
-      if (x.style.display === "flex" && !burgerBar.contains(event.target)) {
-        x.style.display = "none";
-      }
-    });
-  </script>
 </body>
 
 </html>
