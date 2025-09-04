@@ -1,7 +1,7 @@
 @media (min-width: 1200px) {
   .melk-gallery {
     width: 100%;
-    height: 700px;
+    height: 900px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -9,11 +9,16 @@
     margin-top: 180px;
   }
 
+  .melk-gallery>h1 {
+    font-size: 42px;
+    margin-bottom: 50px;
+  }
+
   .melk-large {
     max-width: 90%;
     min-width: 50%;
     border-radius: 20px;
-    height: 700px;
+    max-height: 900px;
     margin-bottom: 20px;
     overflow: hidden;
     cursor: pointer;
@@ -145,6 +150,11 @@
     margin-bottom: 30px;
     margin-top: 30px;
     font-weight: bold;
+  }
+
+  .melk-texts>a {
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .melk-video {
@@ -168,7 +178,7 @@
 @media (min-width: 992px) and (max-width: 1200px) {
   .melk-gallery {
     width: 100%;
-    height: 700px;
+    height: 800px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -180,12 +190,17 @@
     max-width: 90%;
     min-width: 50%;
     border-radius: 20px;
-    height: 700px;
+    max-height: 900px;
     margin-bottom: 20px;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 
+  }
+
+  .melk-gallery>h1 {
+    font-size: 42px;
+    margin-bottom: 50px;
   }
 
   .melk-large img {
@@ -328,6 +343,10 @@
     width: 90%;
     border-radius: 20px;
   }
+
+  .melk-texts>div>p:nth-of-type(2) {
+    padding-bottom: 50px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
@@ -345,12 +364,17 @@
     max-width: 90%;
     min-width: 50%;
     border-radius: 20px;
-    height: 700px;
+    max-height: 900px;
     margin-bottom: 20px;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 
+  }
+
+  .melk-gallery>h1 {
+    font-size: 42px;
+    margin-bottom: 50px;
   }
 
   .melk-large img {
@@ -494,12 +518,16 @@
     width: 90%;
     border-radius: 20px;
   }
+
+  .melk-texts>div>p:nth-of-type(2) {
+    padding-bottom: 50px;
+  }
 }
 
 @media (min-width: 560px) and (max-width: 768px) {
   .melk-gallery {
     width: 100%;
-    height: 700px;
+    height: 600px;
     text-align: center;
     display: flex;
     align-items: center;
@@ -507,10 +535,15 @@
     margin-top: 150px;
   }
 
+  .melk-gallery>h1 {
+    font-size: 28px;
+    margin-bottom: 50px;
+  }
+
   .melk-large {
     max-width: 90%;
     border-radius: 20px;
-    height: 700px;
+    max-height: 900px;
     margin-bottom: 20px;
     overflow: hidden;
     cursor: pointer;
@@ -665,28 +698,37 @@
     width: 90%;
     border-radius: 20px;
   }
+
+  .melk-texts>div>p:nth-of-type(2) {
+    padding-bottom: 50px;
+  }
 }
 
 @media (max-width: 560px) {
   .melk-gallery {
     width: 100%;
-    height: 600px;
+    height: 500px;
     text-align: center;
     display: flex;
     align-items: center;
     flex-flow: column nowrap;
-    margin-top: 150px;
+    margin-top: 120px;
   }
 
   .melk-large {
     max-width: 90%;
     border-radius: 20px;
-    height: 700px;
+    max-height: 800px;
     margin-bottom: 20px;
     overflow: hidden;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 
+  }
+
+  .melk-gallery>h1 {
+    font-size: 28px;
+    margin-bottom: 40px;
   }
 
   .melk-large img {
@@ -752,7 +794,7 @@
   }
 
   .melk-texts>div>p {
-    padding-right: 30px;
+    padding-right: 20px;
     padding-left: 30px;
     text-align: justify;
   }

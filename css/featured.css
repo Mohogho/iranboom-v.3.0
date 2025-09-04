@@ -1,0 +1,105 @@
+.featured {
+    padding: 50px 20px;
+    /* فاصله از لبه چپ و راست */
+    background: #111;
+    text-align: center;
+}
+
+.featured h2 {
+    color: #ffffff;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.property-card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+    margin-bottom: 50px;
+}
+
+.property-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.property-card:hover img {
+    transform: scale(1.05);
+}
+
+.property-card .overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    color: #fff;
+    text-align: right;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.property-card h3 {
+    font-size: 20px;
+    margin: 0 0 5px;
+    padding-bottom: 10px;
+}
+
+.property-card p {
+    font-size: 16px;
+    margin: 0;
+    color: #999;
+}
+
+.property-card h3,
+.property-card p {
+    margin: 0;
+    white-space: normal;
+    word-break: break-word;
+}
+
+/* فاصله اسلایدها از لبه */
+.mySwiper-featured {
+    padding: 0 40px;
+}
+
+.featured-next {
+    margin-right: -20px;
+}
+
+.featured-prev {
+    margin-left: -20px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .featured-next {
+        margin-right: 0px;
+    }
+
+    .featured-prev {
+        margin-left: 0px;
+    }
+
+}
+
+/* ========== ریسپانسیو موبایل ========== */
+@media (max-width: 768px) {
+    .featured h2 {
+        font-size: 28px;
+    }
+
+    .featured-next {
+        margin-right: 0px;
+    }
+
+    .featured-prev {
+        margin-left: 0px;
+    }
+
+}

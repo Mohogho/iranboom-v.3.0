@@ -7,7 +7,7 @@
   <title>ایران بوم | خرید، فروش و اجاره املاک در مهرشهر کرج | مشاوره و سرمایه‌گذاری ملکی</title>
   <meta name="description"
     content="ایران بوم، همراه مطمئن شما در خرید، فروش و اجاره ملک در مهرشهر کرج. ارائه خدمات مشاوره تخصصی، مشارکت در ساخت، بازسازی و آموزش مشاوران املاک با تیمی حرفه‌ای و با تجربه.">
-  <link rel="stylesheet" href="css/main.css?v=3.6.5">
+  <link rel="stylesheet" href="css/main.css?v=3.6.6">
   <!--   <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css"> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
@@ -235,6 +235,76 @@
     </div>
   </section>
 
+  <!-- Featured Properties -->
+  <section class="featured">
+    <h2>املاک برتر</h2>
+    <div class="swiper mySwiper-featured">
+      <div class="swiper-wrapper">
+
+        <a href="./homes.html" class="swiper-slide clickable">
+          <div class="property-card">
+            <img src="./images/12.jpg" alt="ملک برتر">
+            <div class="overlay">
+              <h3>ویلای لوکس مهرشهر</h3>
+            </div>
+          </div>
+        </a>
+
+        <a href="./homes.html" class="swiper-slide clickable">
+          <div class="property-card">
+            <img src="./images/13.jpg" alt="ملک برتر">
+            <div class="overlay">
+              <h3>آپارتمان مدرن</h3>
+            </div>
+          </div>
+        </a>
+
+        <a href="./homes.html" class="swiper-slide clickable">
+          <div class="property-card">
+            <img src="./images/14.jpg" alt="ملک برتر">
+            <div class="overlay">
+              <h3>پنت‌هاوس شمالی</h3>
+            </div>
+          </div>
+        </a>
+
+        <a href="./homes.html" class="swiper-slide clickable">
+          <div class="property-card">
+            <img src="./images/15.jpg" alt="ملک برتر">
+            <div class="overlay">
+              <h3>پنت‌هاوس شمالی</h3>
+            </div>
+          </div>
+        </a>
+
+        <a href="./homes.html" class="swiper-slide clickable">
+          <div class="property-card">
+            <img src="./images/16.jpg" alt="ملک برتر">
+            <div class="overlay">
+              <h3>پنت‌هاوس شمالی</h3>
+            </div>
+          </div>
+        </a>
+
+        <a href="./homes.html" class="swiper-slide clickable">
+          <div class="property-card">
+            <img src="./images/17.jpg" alt="ملک برتر">
+            <div class="overlay">
+              <h3>پنت‌هاوس شمالی</h3>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- دکمه‌های مخصوص این اسلایدر -->
+      <div class="swiper-button-next featured-next clickable"></div>
+      <div class="swiper-button-prev featured-prev clickable"></div>
+    </div>
+  </section>
+
+
+
   <!-- brands -->
   <!-- <section class="brands">
     <div class="bottom">
@@ -427,6 +497,48 @@
       }
     });
   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    var swiperFeatured = new Swiper(".mySwiper-featured", {
+      slidesPerView: 1,
+      spaceBetween: 40,
+      loop: true,
+      navigation: {
+        nextEl: ".featured-next",
+        prevEl: ".featured-prev",
+      },
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        768: { slidesPerView: 2 },
+        1200: { slidesPerView: 3 }
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+
 
 
 </body>
